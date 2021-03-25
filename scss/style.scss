@@ -174,7 +174,7 @@ section {
     padding-bottom: 100px;
     background-image: url(../img/bgwave_profile.gif);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center bottom -1px;
     background-size: 100%;
     
     @include pc {
@@ -302,7 +302,7 @@ section {
     background-color: $color-pink;
     background-image: url(../img/bgwave_favorite.gif);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center bottom -1px;
     background-size: 100%;
 
     @include pc {
@@ -379,7 +379,7 @@ section {
     background-color: #fafafa;
     background-image: url(../img/bgwave_skill.gif);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center bottom -1px;
     background-size: 100%;
 
     @include pc {
@@ -498,7 +498,7 @@ section {
     padding-bottom: 100px;
     background-color:$color-wblue;
     background-image: url(../img/bgwave_works.gif);
-    background-position: center bottom;
+    background-position: center bottom -1px;
     background-size: 100%;
 
     @include pc {
@@ -519,6 +519,7 @@ section {
         background-repeat: no-repeat;
         background-size: 200px;
         background-position: right bottom;
+        text-align: center;
 
 
         @include pc {
