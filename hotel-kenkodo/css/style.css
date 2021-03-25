@@ -1,0 +1,463 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif JP', serif;
+    color: #333;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+
+.flex {
+    display: flex;
+}
+
+.right {
+    text-align: right;
+}
+
+/*共通設定ここまで------------------*/
+
+header {
+    background-image: url(../img/main1.jpg);
+    background-position: center;
+    min-height: 95vh;
+    text-align: center;
+    
+    /*画像をトップに固定する*/
+    background-attachment: fixed;
+}
+
+.logo {
+    margin-top: 40vh;
+    margin-bottom:10px;
+    width: 185px;
+    height: auto;
+}
+
+h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 40px;
+}
+
+/*オープン挨拶------------*/
+section {
+    padding: 20px;
+}
+
+.intro,
+aside,
+footer {
+    background-color: #022503;
+    color: #fff;
+}
+
+.intro_container {
+    flex-direction: column;
+}
+
+.intro_box {
+    margin: 0 auto;
+    width: 435px;
+    position: relative;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 500;
+    position: absolute;
+    top: -50px;
+}
+
+.intro_text {
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.intro_text + .intro_text {
+    border-top: 2px solid #fff;
+}
+
+.intro_btn {
+    margin: 8px auto;
+    padding: 8px;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    border: 3px solid #022503;
+    outline: 8px solid #fff;
+    color: #022503;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.intro_btn:hover {
+    opacity: .5;
+}
+
+.reservation {
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.reservation:first-letter {
+    font-size: 40px;
+}
+
+.intro_btn p {
+    padding: 0 15px;
+}
+
+.intro_btn img {
+    width: 25%;
+    padding: 0 15px;
+}
+
+/*新着情報*/
+.new,
+.access {
+    background-color: rgba(211, 203, 198, .3);
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.red {
+    color: #930000;
+    margin: 28px;
+}
+
+.new_item {
+    margin: 0 0 28px 28px;
+}
+
+td {
+    text-align: justify
+}
+
+.date {
+    width: 20%;
+    vertical-align: top;
+}
+
+.new_past {
+    margin-right: 28px;
+}
+
+.new_past a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 400px;
+}
+
+main h4 {
+    margin-bottom: 28px;
+}
+
+/*客室紹介----------------------*/
+.room {
+    margin-top: 50px;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.room::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 140px;
+    background-color: #d3cbc6;
+    right: 0;
+    top: 25%;
+    z-index: -3;
+}
+
+.room_text {
+    text-align: right;
+}
+
+.room_img {
+    max-width: 700px;
+    width: 90%;
+    height: auto;
+    margin-right: auto;
+}
+
+.more {
+    margin-top: 20px;
+}
+
+/*その他メニュー                 */
+.menu {
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.menu_items {
+    margin-bottom: 50px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu_items::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    background-color: #d3cbc6;
+    left: 0;
+    bottom: -20px;
+    z-index: -5;
+}
+
+.items_img {
+    margin-left: auto;
+    padding-left: 10px;
+    width: auto;
+    max-width: 400px;
+    height: 280px;
+}
+
+/*婚礼プラン--------------------*/
+.wedding {
+    padding: 0;
+    flex-direction: column;
+}
+
+.wedding_img {
+    width: 100%;
+}
+
+.wedding_text {
+    width: 100%;
+    background-color: #d3cbc6;
+    margin-left: auto;
+    padding:20px 10px;
+    text-align: right;
+}
+
+.wedding_text h4 {
+    margin-bottom: 28px;
+}
+
+/*本館へのリンク-----------------*/
+.honkan {
+    position: relative;
+}
+
+.honkan_img {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.honkan_title {
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.honkan a:hover {
+    opacity: .7;
+}
+
+/*アクセス----------------------*/
+.access {
+    flex-direction: column-reverse;
+}
+
+.map,
+.access_text {
+    width: 100%
+}
+
+.access_text {
+    padding: 28px 10px;
+}
+
+.access_text p {
+    margin-top: 28px;
+    line-height: 2em;
+}
+
+p + .loop {
+    margin-left: auto;
+    width: 370px;
+    border-top: 2px solid #333;
+}
+
+.access_text a:hover {
+    text-decoration: underline;
+}
+
+/*aside インフォメーション--------*/
+.info {
+    padding: 30px;
+    text-align: center;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+.info_logo {
+    width: 45px;
+    margin-bottom: 25px;
+}
+
+.tel {
+    font-size: 35px;
+    vertical-align: top;
+}
+
+
+/*フッター----------------------*/
+footer {
+    padding: 40px;
+    text-align: center;
+}
+
+ul {
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+    margin: 4px;
+    font-size: 18px;
+}
+
+li a {
+    color: #fff;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+/*------------------------------------
+---------------PC版設定----------------
+-------------------------------------*/
+
+@media (min-width: 769px) {
+    
+    body {
+        font-size: 18px;
+    }
+    
+    /*オープン挨拶*/
+    .intro_container {
+        margin: 0 auto;
+        max-width: 1200px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .intro_box {
+        margin: 0;
+    }
+    .intro_text {
+        padding-top: 50px;
+    }
+    .intro_btn {
+        margin: 30px 10px;
+        padding: 50px 8px;
+        width: 250px;
+        height: auto;
+        flex-direction: column;
+    }
+    .intro_btn img {
+        width: 100%;
+    }
+    
+    /*新着情報*/
+    h4 {
+        font-size: 40px;
+    }
+    
+    /*客室紹介*/
+    
+    .menu {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .menu_items {
+        flex-direction: column;
+    }
+    .menu_items + .menu_items {
+        margin-left: 5px;
+    }
+    .menu_img {
+        max-width: 400px;
+    }
+    
+    /*婚礼プラン*/
+    .wedding {
+        padding: 0;
+        flex-direction: row;
+        position: relative;
+    }
+    .wedding_img {
+        width: 51%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 85px;
+    }
+    .wedding_text {
+        width: 70%;
+        position: absolute;
+        top: -10px;
+        right: 0;
+        z-index: -5;
+    }
+
+    /*本館リンク*/
+    
+    /*アクセス*/
+    .access {
+        flex-direction: row;
+    }
+    
+    .access_text {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    /*フッター*/
+    ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    li {
+        margin: 0 .5em;
+    }
+    
+    li + li::before {
+        content: "／　";
+    }
+    
+}

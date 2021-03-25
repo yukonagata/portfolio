@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>健康堂 はなれ</title>
+    <meta name="description" content="2021年1月にオープンした3棟限定の別邸、健康堂離れの公式サイトです。">
+    <!--    メディアクエリ-->
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <!--    リセットCSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!--    Googleフォント-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <!--    自分のCSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--    ファビコン-->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <header>
+        <h1><img src="img/logoicon.svg" class="logo" alt="健康堂のロゴ画像"></h1>
+        <h2>健康堂<span class="title">はなれ</span></h2>
+    </header>
+
+        <!--        オープン挨拶        -->
+    <section class="intro">
+        <div class="intro_container flex">
+            <div class="intro_box">
+                <h3>2021年1月OPEN</h3>
+                <p class="intro_text">上質なおもてなしと、全棟に源泉掛け流しの露天風呂<br>
+                    大人だからこそ楽しめる、時間と空間を贅沢に。</p>
+                <p class="intro_text">本館向かいに3棟限定でオープンいたしました。<br>
+                    四季折々の景色が楽しめる庭園と、天然温泉。<br>
+                    別荘のようにゆったりとお過ごしください。</p>
+            </div><!--/.intro_box flex-->
+
+            <a href="#">
+                <div class="intro_btn flex">
+                    <p class="reservation">Reservation</p>
+                    <p>空室検索</p>
+                    <img src="img/arrow.svg" alt="予約ボタンの矢印">
+                </div><!--/.intro_btn flex-->
+            </a>
+        </div><!--/.intro_container flex-->
+    </section>
+       
+        <!--       新着情報        -->
+    <section class="new">
+        <h4>■新着情報</h4>
+        <p class="red">※新型コロナウイルス対策について</p>
+        <table class="new_item">
+            <tr>
+                <td class="date"> 1月 8日</td>
+                <td>湯巡りパスポートがご利用いただけます（ 3月 31日まで）</td>
+            </tr>
+            <tr>
+                <td class="date"> 1月 4日</td>
+                <td>婚礼プランページを追加しました</td>
+            </tr>
+            <tr>
+                <td class="date"> 1月 3日</td>
+                <td>オープンイベントへのご参加ありがとうございました</td>
+            </tr>
+        </table>
+        <p class="new_past right">▶︎▶︎<a href="#">過去記事</a></p>
+    </section>
+       
+        <!--        メインエリア        -->
+    <main>
+        <section class="room flex">
+            <img src="img/room.jpg" alt="客室の画像" class="room_img">
+            <div class="room_text">
+                <h4>客室</h4>
+                <p>テーマ別に3棟ご用意いたしました。<br>
+                    全室露天風呂と庭園がついております。<br>
+                    ※定員２〜３名</p>
+                <a href="#"><p class="more">MORE→</p></a>
+            </div><!--/.room_text-->
+        </section>
+        
+        <!--        食事・温泉        -->
+        <section class="menu flex">
+            <div class="menu_items flex">
+                <img src="img/dinner.jpg" alt="夕食の画像" class="items_img">
+                <div class="items_text">
+                    <h4>お食事</h4>
+                    <p>地産地消の素材を、<br>
+                        素材の風味を生かして調理いたします。<br>
+                        ※全プラン部屋食となります</p>
+                    <a href="#"><p class="more">MORE→</p></a>
+                </div><!--/.items__text-->
+            </div><!--/.menu_items flex-->
+            
+            <div class="menu_items flex">
+                <img src="img/spa.jpg" alt="温泉の画像" class="items_img">
+                <div class="items_text">
+                    <h4>温泉</h4>
+                    <p>源泉かけ流しの大浴場と<br>
+                        家族風呂でおくつろぎください。<br>
+                        ※日帰り入浴は現在休止中です</p>
+                    <a href="#"><p class="more">MORE→</p></a>
+                </div><!--/.items__text-->
+            </div><!--/.menu_items flex-->
+        </section>
+        
+        <!--        婚礼プラン        -->
+        <section class="wedding flex">
+            <img class="wedding_img" src="img/wedding.jpg" alt="婚礼プランの紹介画像">
+            <div class="wedding_text">
+                <h4>健康堂の婚礼プラン</h4>
+                <p>会食や引き出物、ご宿泊の手配まで、<br>
+                    全てがセットになったプランです。<br>
+                    様々なオプションもご用意しています。</p>
+                <a href="#"><p class="more">MORE→</p></a>
+            </div><!--/.wedding_text-->
+        </section>
+        <!--        本館へのリンク        -->
+        <div class="honkan">
+            <a href="#">
+               <img class="honkan_img" src="img/honkanbanner.jpg" alt="本館へのリンク画像">
+            </a>
+            <h4 class="honkan_title">健康堂本館<br>公式サイトへ</h4>
+        </div><!--/.honkan-->
+    </main>
+    <!--        アクセス/Googlemap        -->
+    <div class="access flex"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.138350382048!2d132.4393129502736!3d34.47401440273803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a9be08e7c0a8f%3A0x5456f89d240f91b1!2z44OR44K944Kz44Oz44K544Kv44O844Or77yo77yh77yK77yu77yh!5e0!3m2!1sja!2sjp!4v1610027757460!5m2!1sja!2sjp" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="access_text">
+            <h4>アクセス</h4>
+            <p>新幹線 新花口駅からJR横尾駅まで、在来線で5分
+               <br>↓
+               <br>JR横尾駅からお土産横丁を通り、徒歩5分</p>
+            <p class="loop right">新花口駅からのループバスもご利用ください<br>
+                ▶▶<a href="#">時刻表</a></p>
+        </div><!--/.access_text-->
+    </div><!--/.access flex-->
+
+        <!--        インフォメーション        -->
+    <aside class="info">
+        <img class="info_logo" src="img/logoicon.svg" alt="健康堂のロゴ画像">
+        <p class="info_text">お問い合わせ
+        <br><span class="tel">082-123-4567</span>
+        <br>9:00 ～ 17:00</p>
+    </aside>
+
+        <!--        フッター        -->
+    <footer>
+        <ul class="flex">
+            <li><a href="#">宿泊予約</a></li>
+            <li><a href="#">よくあるご質問</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">採用情報</a></li>
+        </ul>
+        <small>&copy;健康堂リゾート</small>
+    </footer>
+</body>
+
+</html>
