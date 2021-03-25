@@ -172,7 +172,7 @@ section {
   padding-bottom: 100px;
   background-image: url(../img/bgwave_profile.gif);
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center bottom -1px;
   background-size: 100%;
 }
 
@@ -319,7 +319,7 @@ section {
   background-color: #ffebeb;
   background-image: url(../img/bgwave_favorite.gif);
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center bottom -1px;
   background-size: 100%;
 }
 
@@ -394,7 +394,7 @@ section {
   background-color: #fafafa;
   background-image: url(../img/bgwave_skill.gif);
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center bottom -1px;
   background-size: 100%;
 }
 
@@ -529,7 +529,7 @@ section {
   padding-bottom: 100px;
   background-color: #78c2d3;
   background-image: url(../img/bgwave_works.gif);
-  background-position: center bottom;
+  background-position: center bottom -1px;
   background-size: 100%;
 }
 
@@ -556,6 +556,7 @@ section {
   background-repeat: no-repeat;
   background-size: 200px;
   background-position: right bottom;
+  text-align: center;
 }
 
 @media (min-width: 769px) {
@@ -575,21 +576,19 @@ section {
           column-count: 1;
   -webkit-column-gap: 10px;
           column-gap: 10px;
-  /* アイテム間の余白 */
 }
 
 @media (min-width: 769px) {
   .works__wrap2 {
     -webkit-column-count: 3;
             column-count: 3;
-    /* PCでの横並び数 */
     height: 1190px;
   }
 }
 
 .wbox1 {
   -webkit-column-break-inside: avoid;
-  break-inside: avoid;
+          break-inside: avoid;
   display: inline-block;
   margin-bottom: 10px;
   padding: .5em;
@@ -681,7 +680,7 @@ section {
 
 .wbox2 {
   -webkit-column-break-inside: avoid;
-  break-inside: avoid;
+          break-inside: avoid;
   display: inline-block;
   margin-bottom: 10px;
   padding: 1em;
