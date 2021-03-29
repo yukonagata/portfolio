@@ -325,19 +325,13 @@ section {
         font-size: 32px;
     }
 
-    &__ttlicon {
-        width: 50px;
-        height: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
     &__itemcap{
-        padding-top: 20px;
-        padding-left: 30%;
+        padding-top: 50px;
         width: 100%;
-        // opacity: .8;
+
+        @include pc {
+            width: 70%;
+        }
     }
 }
 
@@ -519,7 +513,6 @@ section {
         background-repeat: no-repeat;
         background-size: 200px;
         background-position: right bottom;
-        text-align: center;
 
 
         @include pc {
