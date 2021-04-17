@@ -13,6 +13,10 @@ img {
     vertical-align: bottom;
 }
 
+li {
+    list-style: none;
+}
+
 a {
     list-style: none;
     text-decoration: none;
@@ -56,6 +60,40 @@ h2 {
     font-size: 40px;
 }
 
+.gnavi {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.gnavi_reservation,
+.gnavi_hotel {
+    padding: 20px 5px;
+    position: fixed;
+    top: 150px;
+    right: 0;
+    width: 50px;
+    height: auto;
+    background-color: #d3cbc6;
+    align-items: center;
+    justify-content: center;
+}
+
+.gnavi_reservation:hover,
+.gnavi_hotel:hover {
+    outline: 2px solid #fff;
+    outline-offset: -5px;
+}
+
+.gnavi_hotel {
+    top: 265px;
+}
+
+.gnavi_text {
+    writing-mode: vertical-rl;
+}
+
+
 /*オープン挨拶------------*/
 section {
     padding: 20px;
@@ -73,7 +111,7 @@ footer {
 }
 
 .intro_box {
-    margin: 0 auto;
+    margin: 0 auto 0 1em;
     width: 435px;
     position: relative;
 }
@@ -96,17 +134,17 @@ h3 {
 }
 
 .intro_btn {
-    margin: 8px auto;
+    margin: 8px;
     padding: 8px;
-    width: 100%;
+    width: 90%;
     height: 70px;
     background-color: #fff;
     border: 3px solid #022503;
     outline: 8px solid #fff;
     color: #022503;
     flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .intro_btn:hover {
@@ -114,21 +152,21 @@ h3 {
 }
 
 .reservation {
+    width: 60%;
     font-size: 30px;
-    margin-bottom: 70px;
 }
 
 .reservation:first-letter {
     font-size: 40px;
 }
 
-.intro_btn p {
-    padding: 0 15px;
+.intro_inner {
+    width: 40%;
+    padding-left: 10px;
 }
 
 .intro_btn img {
-    width: 25%;
-    padding: 0 15px;
+    width: 50px;
 }
 
 /*新着情報*/
@@ -189,15 +227,19 @@ main h4 {
     content: "";
     position: absolute;
     width: 90%;
-    height: 140px;
+    height: 50%;
     background-color: #d3cbc6;
     right: 0;
-    top: 25%;
+    bottom: 25%;
     z-index: -3;
 }
 
 .room_text {
     text-align: right;
+}
+
+.room_text p {
+    padding-right: 20px;
 }
 
 .room_img {
@@ -208,13 +250,13 @@ main h4 {
 }
 
 .more {
-    margin-top: 20px;
+    margin: 20px 0;
+    z-index: 10;
 }
 
 /*その他メニュー                 */
 .menu {
     flex-direction: column;
-    margin-bottom: 10px;
 }
 
 .menu_items {
@@ -224,29 +266,34 @@ main h4 {
     position: relative;
 }
 
-.menu_items::after {
+.menu_items::before {
     content: "";
     position: absolute;
     width: 90%;
     height: 50%;
     background-color: #d3cbc6;
     left: 0;
-    bottom: -20px;
+    bottom: 0;
     z-index: -5;
 }
 
 .items_img {
     margin-left: auto;
-    padding-left: 10px;
-    width: auto;
-    max-width: 400px;
-    height: 280px;
+    padding: 0 0 20px;
+    width: 60%;
+    height: auto;
+    object-fit: scale-down;
+}
+
+.items_text p {
+    padding: 0 10px 0 20px;
 }
 
 /*婚礼プラン--------------------*/
 .wedding {
     padding: 0;
     flex-direction: column;
+    position: relative;
 }
 
 .wedding_img {
@@ -255,10 +302,23 @@ main h4 {
 
 .wedding_text {
     width: 100%;
-    background-color: #d3cbc6;
-    margin-left: auto;
-    padding:20px 10px;
+    margin: 0 auto;
     text-align: right;
+}
+
+.wedding::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-color: #d3cbc6;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+}
+
+.wedding_text p {
+    padding-right: 20px;
 }
 
 .wedding_text h4 {
@@ -278,7 +338,7 @@ main h4 {
 .honkan_title {
     position: absolute;
     top: 30%;
-    left: 10px;
+    left: 20px;
 }
 
 .honkan a:hover {
@@ -296,17 +356,18 @@ main h4 {
 }
 
 .access_text {
-    padding: 28px 10px;
+    padding: 28px 20px;
 }
 
 .access_text p {
     margin-top: 28px;
+    padding-left: 20px;
     line-height: 2em;
 }
 
 p + .loop {
     margin-left: auto;
-    width: 370px;
+    width: 80%;
     border-top: 2px solid #333;
 }
 
@@ -336,27 +397,27 @@ p + .loop {
 
 
 /*フッター----------------------*/
-footer {
-    padding: 40px;
-    text-align: center;
+.footer {
+    padding: 30px 0 12px;
 }
 
-ul {
-    margin-bottom: 30px;
+.footer_list {
+    margin-bottom: 50px;
     flex-direction: column;
 }
 
-li {
+.footer_item {
     list-style: none;
     margin: 4px;
     font-size: 18px;
 }
 
-li a {
+footer a,
+small {
     color: #fff;
 }
 
-li a:hover {
+.footer_item a:hover {
     text-decoration: underline;
 }
 
@@ -390,6 +451,11 @@ li a:hover {
         height: auto;
         flex-direction: column;
     }
+    
+    .reservation {
+        padding-bottom: 50px;
+    }
+    
     .intro_btn img {
         width: 100%;
     }
@@ -399,7 +465,11 @@ li a:hover {
         font-size: 40px;
     }
     
-    /*客室紹介*/
+    /*客室紹介・温泉・食事*/
+    
+    .room::after {
+        width: 60%;
+    }
     
     .menu {
         flex-direction: row;
@@ -411,8 +481,19 @@ li a:hover {
     .menu_items + .menu_items {
         margin-left: 5px;
     }
-    .menu_img {
-        max-width: 400px;
+    
+    .items_img {
+        padding-bottom: 0;
+        width: 90%;
+    }
+    
+    .menu_items::before {
+        width: 90%;
+        height: 60%;
+    }
+    
+    .items_text {
+        padding-left: 20px;
     }
     
     /*婚礼プラン*/
@@ -422,7 +503,7 @@ li a:hover {
         position: relative;
     }
     .wedding_img {
-        width: 51%;
+        width: 50%;
         height: auto;
         margin-right: 0;
         margin-bottom: 85px;
@@ -430,9 +511,12 @@ li a:hover {
     .wedding_text {
         width: 70%;
         position: absolute;
-        top: -10px;
+        bottom: 0;
         right: 0;
-        z-index: -5;
+    }
+    
+    .wedding::after {
+        height: 90%;
     }
 
     /*本館リンク*/
@@ -443,20 +527,20 @@ li a:hover {
     }
     
     .access_text {
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     /*フッター*/
-    ul {
+    .footer_list {
         flex-direction: row;
         justify-content: center;
     }
 
-    li {
+    .footer_item {
         margin: 0 .5em;
     }
     
-    li + li::before {
+    .footer_item + .footer_item::before {
         content: "／　";
     }
     
