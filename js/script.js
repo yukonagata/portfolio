@@ -49,7 +49,7 @@ gNavi.onclick = (e) => {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
         },
-      
+    
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
