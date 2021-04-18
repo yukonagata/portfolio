@@ -52,7 +52,7 @@ section {
   margin: 0 auto;
   padding: 100px 0;
   width: 90%;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 /* ヘッダー */
@@ -512,7 +512,7 @@ section {
   .works__wrap2 {
     -moz-column-count: 3;
          column-count: 3;
-    height: 1190px;
+    height: 1230px;
   }
 }
 

@@ -66,7 +66,7 @@ section {
     margin: 0 auto;
     padding: 100px 0;
     width: 90%;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 /* ヘッダー */
@@ -552,7 +552,6 @@ section {
     }
 
     &__wrap2 {
-        // margin: 0 auto;
         padding-top: 40px;
         text-align: center;
         column-count: 1;
@@ -560,7 +559,7 @@ section {
     
         @include pc {
             column-count: 3;
-            height: 1190px;
+            height: 1230px;
         }
     }
 }
