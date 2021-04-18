@@ -40,6 +40,16 @@ gNavi.onclick = (e) => {
 
 //------------------好きなことSwiper-------------------------
     var swiper = new Swiper('.swiper-container', {
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+        renderBullet: function (index, className) {
+            //中に数字を表示
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
+        },
+      
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,

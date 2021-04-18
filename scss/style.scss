@@ -16,7 +16,6 @@ $pc: 769px; // PC
 // ---------------共通設定
 * {
     box-sizing: border-box;
-        // border: 1px solid blue;
 }
 
 html {
@@ -174,7 +173,7 @@ section {
     padding-bottom: 100px;
     background-image: url(../img/bgwave_profile.gif);
     background-repeat: no-repeat;
-    background-position: center bottom -1px;
+    background-position: center bottom -3px;
     background-size: 100%;
     
     @include pc {
@@ -302,7 +301,7 @@ section {
     background-color: $color-pink;
     background-image: url(../img/bgwave_favorite.gif);
     background-repeat: no-repeat;
-    background-position: center bottom -1px;
+    background-position: center bottom -3px;
     background-size: 100%;
 
     @include pc {
@@ -334,6 +333,35 @@ section {
         }
     }
 }
+
+.swiper-pagination {
+    margin: 0 auto;
+    max-width: 400px;
+    left: 0;
+    right: 250px;
+    }
+  
+  .swiper-pagination-bullet {
+      margin-right: 5px;
+      padding-top: 3px;
+      width: 30px;
+      height: 30px;
+      background: #ffffff;
+      opacity: 0.8;
+      color: #333;
+      font-size: 16px;
+
+      &:focus {
+          outline: none;
+      }
+  }
+
+  /* 現在のスライドのスタイル */
+  .swiper-pagination-bullet-active {
+      background-color: $color-wblue;
+      color: #ffffff;
+  }
+  
 
 .swiper-container {
     margin: 0 auto;
@@ -373,7 +401,7 @@ section {
     background-color: #fafafa;
     background-image: url(../img/bgwave_skill.gif);
     background-repeat: no-repeat;
-    background-position: center bottom -1px;
+    background-position: center bottom -3px;
     background-size: 100%;
 
     @include pc {
@@ -492,7 +520,7 @@ section {
     padding-bottom: 100px;
     background-color:$color-wblue;
     background-image: url(../img/bgwave_works.gif);
-    background-position: center bottom -1px;
+    background-position: center bottom -3px;
     background-size: 100%;
 
     @include pc {
@@ -506,23 +534,25 @@ section {
     }
 
     &__wrap1 {
-        margin: 0 auto;
-        column-count: 1;
-        column-gap: 10px;/* アイテム間の余白 */
+        width: 100%;
         background-image: url(../img/bgworks.png);
         background-repeat: no-repeat;
         background-size: 200px;
         background-position: right bottom;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @include pc {
+            display: block;
             column-count: 2;/* PCでの横並び数 */
+            column-gap: 10px;/* アイテム間の余白 */
             height: 652px;
             }
     }
 
     &__wrap2 {
-        margin: 0 auto;
+        // margin: 0 auto;
         padding-top: 40px;
         text-align: center;
         column-count: 1;
@@ -536,7 +566,7 @@ section {
 }
 
 .wbox1 {
-    break-inside: avoid;
+    break-inside: avoid;//ボックス内での区切り禁止
     display: inline-block;
     margin-bottom: 10px;
     padding: .5em;
@@ -548,7 +578,6 @@ section {
     @include pc {
         width: 100%;
         max-width: 100%;
-
     }
 
 
@@ -580,6 +609,7 @@ section {
         border-radius: 10px;
         background-color: rgba(48,92,145,.8);
         color: $color-bg;
+        text-align: center;
         
         display: flex;
         flex-direction: column;
@@ -599,7 +629,7 @@ section {
     &__text {
         margin: .5em 20px 0;
                 
-        &:last-of-type {
+        &:not(:first-of-type) {
             margin-right:30px;
             margin-left: 30px;
             text-align: left;

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+h2 {
+	font-family: 'Noto Serif JP', serif;
+}
+
+.text-purple {
+	color: rgb(102, 51, 153);
+}
+
+.bg-purple {
+	background: rgba(102, 51, 153, .9);
+	border-radius: 20px;
+}
+
+.bg-cream {
+	background-color: ivory;
+}
+
+.border-purple {
+	border-top: 10px solid rebeccapurple;
+}
+
+.jumbotron {
+	background: center no-repeat;
+	background-size: cover;
+}
+
+
+.trentino {
+	background-image: url("../img/trentino.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 200px;
+}
+
+.map {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1140px;
+}
