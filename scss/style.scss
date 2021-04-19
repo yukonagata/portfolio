@@ -721,13 +721,18 @@ section {
 
         &:last-of-type {
             text-align: left;
-            text-indent: 1em;
             display: none;
 
             @include pc {
                 display: block;
             }
-    
+
+            &::before {
+                content: "●";
+                padding-right: .3em;
+                color: $color-wblue;
+            }
+
         }
     }
 

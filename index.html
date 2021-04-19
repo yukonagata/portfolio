@@ -231,20 +231,20 @@
                     <div class="works__box wbox2">
                         <h3 class="wbox2__title">ラベル制作</h3>
                         <p class="wbox2__text">授業課題<br>ターゲット：訓練校の掃除当番</p>
-                        <p class="wbox2__text">除菌スプレーと分かるのに必要な情報を絞り、机周りを邪魔しないよう色を抑えています。何となく気になる、英字の余談部分も作りました。</p>
+                        <p class="wbox2__text">除菌スプレーと分かるのに必要な情報を絞り、机周りを邪魔しないよう色を抑えています。気づいた人だけに読んでもらえるよう、英字の余談部分も作りました。</p>
                         <img src="img/osban.png" alt="消毒液のラベルデザイン" class="wbox2__img">
                     </div><!--/.works__box2-->
                     <div class="works__box wbox2">
                         <h3 class="wbox2__title">ロゴ制作</h3>
-                        <p class="wbox2__text">卒業制作チームコンペ<br>ターゲット：セラピスト養成スクールを探している女性</p>
+                        <p class="wbox2__text">卒業制作チーム内コンペ<br>ターゲット：セラピスト養成スクールを探している女性</p>
                         <p class="wbox2__text">リンパマッサージやハンドケアなどを連想出来るよう、手のイラスト（向かい合わせの講師と生徒のイメージ）を使用しました。</p>
                         <img src="img/on-katsudo.png" alt="温活動アカデミーのロゴデザイン" class="wbox2__img">
                     </div><!--/.works__box2-->
                     <div class="works__box wbox2">
                         <h3 class="wbox2__title">プレゼン資料制作</h3>
                         <p class="wbox2__text">授業課題<br>ターゲット：コーディングを学習している訓練校生</p>
-                        <p class="wbox2__text">ノーコードの説明・WEBページ作成ツール"STUDIO"の紹介と、制作した感想などをまとめ、発表しました。</p>
-                        <img src="img/powerpoint.jpg" alt="パワーポイントでプレゼンテーションをしている写真" class="wbox2__img">
+                        <p class="wbox2__text">ノーコードの説明・WEBページ作成ツール"STUDIO"の紹介と、実際に制作した感想などを15分にまとめ、発表しました。</p>
+                        <img src="img/powerpoint.jpg" alt="パワーポイントでプレゼンテーションをしている自分の写真" class="wbox2__img">
                     </div><!--/.works__box2-->
                 </div><!--/.works__wrap2 flex-->
             </section>
@@ -280,36 +280,23 @@
         <div id="contact" class="contact">
             <section class="contact__main" >
                 <h2 class="contact__title"data-aos="fade-down" data-aos-duration="1500">Contact</h2>
-                <!-- formrun -->
-                <form class="formrun contact__form form" action="https://form.run/api/v1/r/vwt774csawecfw28pjw1ij8c" method="post">
+                <form class="contact__form form" action="mail.php" method="post">
                     <div class="form__inner">
                     <label class="form__label">お名前 [必須]</label>
-                    <input name="お名前" type="text" class="form__name" placeholder="例) 永田&emsp;太郎" data-formrun-required>
-                    <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
+                    <input name="お名前" type="text" class="form__name" placeholder="例) 永田&emsp;太郎" required>
                     </div><!--/.form__inner-->
                 
                     <div class="form__inner">
                     <label class="form__label">メールアドレス [必須]</label>
-                    <input name="メールアドレス" type="text" placeholder="例）mail@example.com" class="form__email" data-formrun-type="email" data-formrun-required>
-                    <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                    <input name="Email" type="text" placeholder="例）mail@example.com" class="form__email" required>
                     </div><!--/.form__inner-->
                 
                     <div class="form__inner">
                     <label class="form__label">お問い合わせ [必須]</label>
-                    <textarea name="お問い合わせ" placeholder="お気軽にお問い合わせください" class="form__message" data-formrun-required></textarea>
-                    <div data-formrun-show-if-error="お問い合わせ">内容を入力してください</div>
+                    <textarea name="お問い合わせ" placeholder="お気軽にお問い合わせください" class="form__message" required></textarea>
                     </div><!--/.form__inner-->
-                    
-                    <!-- ボット投稿をブロックするためのタグ -->
-                    <div class="_formrun_gotcha">
-                    <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
-                    <label for="_formrun_gotcha">If you are a human, ignore this field</label>
-                    <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
-                    </div>
-                
-                    <button type="submit" class="form__btn" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信する</button>
+                    <button type="submit" class="form__btn">送信する</button>
                 </form>
-                <!-- formrunここまで -->
             </section>
         </div><!--/.contact-->
     </main>
@@ -327,7 +314,5 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!--MyJavaScript-->
         <script src="js/script.js"></script>
-        <!--formrunJavaScript-->
-        <script src="https://sdk.form.run/js/v2/formrun.js"></script>
     </body>
     </html>

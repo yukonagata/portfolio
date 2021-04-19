@@ -679,13 +679,17 @@ section {
 }
 .wbox2__text:last-of-type {
   text-align: left;
-  text-indent: 1em;
   display: none;
 }
 @media (min-width: 769px) {
   .wbox2__text:last-of-type {
     display: block;
   }
+}
+.wbox2__text:last-of-type::before {
+  content: "●";
+  padding-right: 0.3em;
+  color: #78c2d3;
 }
 
 /* others----------------------------------*/
