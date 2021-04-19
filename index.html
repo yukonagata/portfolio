@@ -279,24 +279,37 @@
         <!-- Contact -->
         <div id="contact" class="contact">
             <section class="contact__main" >
-                <h2 class="contact__title" data-aos="fade-down" data-aos-duration="1500">Contact</h2>
-                <form class="contact__form form" action="mail.php" method="post">
+                <h2 class="contact__title"data-aos="fade-down" data-aos-duration="1500">Contact</h2>
+                <!-- formrun -->
+                <form class="formrun contact__form form" action="https://form.run/api/v1/r/vwt774csawecfw28pjw1ij8c" method="post">
                     <div class="form__inner">
                     <label class="form__label">お名前 [必須]</label>
-                    <input name="お名前" type="text" class="form__name" placeholder="例) 永田&emsp;太郎" />
+                    <input name="お名前" type="text" class="form__name" placeholder="例) 永田&emsp;太郎" data-formrun-required>
+                    <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
                     </div><!--/.form__inner-->
                 
                     <div class="form__inner">
                     <label class="form__label">メールアドレス [必須]</label>
-                    <input name="Email" type="text" placeholder="例）mail@example.com" class="form__email" />
+                    <input name="メールアドレス" type="text" placeholder="例）mail@example.com" class="form__email" data-formrun-type="email" data-formrun-required>
+                    <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
                     </div><!--/.form__inner-->
                 
                     <div class="form__inner">
                     <label class="form__label">お問い合わせ [必須]</label>
-                    <textarea name="お問い合わせ" placeholder="お気軽にお問い合わせください" class="form__message"></textarea>
+                    <textarea name="お問い合わせ" placeholder="お気軽にお問い合わせください" class="form__message" data-formrun-required></textarea>
+                    <div data-formrun-show-if-error="お問い合わせ">内容を入力してください</div>
                     </div><!--/.form__inner-->
-                    <button type="submit" class="form__btn">送信する</button>
+                    
+                    <!-- ボット投稿をブロックするためのタグ -->
+                    <div class="_formrun_gotcha">
+                    <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+                    <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                    <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+                    </div>
+                
+                    <button type="submit" class="form__btn" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信する</button>
                 </form>
+                <!-- formrunここまで -->
             </section>
         </div><!--/.contact-->
     </main>
@@ -314,5 +327,7 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!--MyJavaScript-->
         <script src="js/script.js"></script>
+        <!--formrunJavaScript-->
+        <script src="https://sdk.form.run/js/v2/formrun.js"></script>
     </body>
     </html>
