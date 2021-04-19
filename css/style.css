@@ -50,7 +50,7 @@ h3 {
 
 section {
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 80px 0;
   width: 90%;
   max-width: 1000px;
 }
@@ -101,6 +101,7 @@ section {
   height: 2px;
   background-color: #888;
   display: block;
+  transition: 0.3s;
 }
 
 .active span:first-child {
@@ -145,11 +146,12 @@ section {
 
 /* プロフィール----------------------------------*/
 .profile {
+  margin: -5px 0;
   background-color: #fafafa;
   padding-bottom: 100px;
   background-image: url(../img/bgwave_profile.gif);
   background-repeat: no-repeat;
-  background-position: center bottom -3px;
+  background-position: center bottom -5px;
   background-size: 100%;
 }
 @media (min-width: 769px) {
@@ -206,8 +208,8 @@ section {
 }
 @media (min-width: 769px) {
   .profile__career {
-    margin-right: 0;
-    margin-left: auto;
+    margin-right: auto;
+    margin-left: 5%;
     width: 50%;
   }
 }
@@ -223,7 +225,7 @@ section {
   background-image: url(../img/yukosphoto.jpg);
   background-repeat: no-repeat;
   background-position: left top;
-  margin-top: 30px;
+  margin: 30px 5% 0 0;
   width: 50%;
   height: auto;
   border-radius: 50% 90% 40% 40%/70%;
@@ -268,10 +270,11 @@ section {
 
 /* 好きなこと----------------------------------*/
 .favorite {
+  margin: -5px 0;
   background-color: #ffebeb;
   background-image: url(../img/bgwave_favorite.gif);
   background-repeat: no-repeat;
-  background-position: center bottom -3px;
+  background-position: center bottom -5px;
   background-size: 100%;
 }
 @media (min-width: 769px) {
@@ -306,7 +309,7 @@ section {
   margin: 0 auto;
   max-width: 400px;
   left: 0;
-  right: 250px;
+  right: 30%;
 }
 
 .swiper-pagination-bullet {
@@ -354,11 +357,12 @@ section {
 
 /* 現在のスキル----------------------------------*/
 .skill {
+  margin: -5px 0;
   padding-bottom: 100px;
   background-color: #fafafa;
   background-image: url(../img/bgwave_skill.gif);
   background-repeat: no-repeat;
-  background-position: center bottom -3px;
+  background-position: center bottom -5px;
   background-size: 100%;
 }
 @media (min-width: 769px) {
@@ -374,7 +378,7 @@ section {
 
 .sbox {
   margin: 0 auto;
-  max-width: 620px;
+  max-width: 675px;
 }
 .sbox__wrap {
   flex-direction: column;
@@ -403,6 +407,11 @@ section {
   text-align: center;
   color: #305c91;
 }
+@media (min-width: 769px) {
+  .sbox__icon {
+    padding: 1.2%;
+  }
+}
 .sbox__gauge {
   margin: 0 auto;
   width: 100px;
@@ -415,12 +424,25 @@ section {
   line-height: 86px;
   font-size: 32px;
 }
+@media (min-width: 769px) {
+  .sbox__gauge {
+    width: 118px;
+    height: 118px;
+    line-height: 100px;
+  }
+}
 .sbox__gauge--t {
   background: #305c91;
   border: none;
   font-size: 13px;
   color: #fafafa;
   line-height: 100px;
+}
+@media (min-width: 769px) {
+  .sbox__gauge--t {
+    font-size: 16px;
+    line-height: 116px;
+  }
 }
 .sbox__gauge--90 {
   background-image: url(../img/90.png);
@@ -436,6 +458,11 @@ section {
 }
 .sbox__cap {
   font-weight: bold;
+}
+@media (min-width: 769px) {
+  .sbox__cap {
+    font-size: 18px;
+  }
 }
 .sbox__list {
   margin: 0 auto;
@@ -462,15 +489,16 @@ section {
 
 /* 制作物----------------------------------*/
 .works {
+  margin: -5px 0;
   padding-bottom: 100px;
   background-color: #78c2d3;
   background-image: url(../img/bgwave_works.gif);
-  background-position: center bottom -3px;
+  background-position: center bottom -5px;
   background-size: 100%;
 }
 @media (min-width: 769px) {
   .works {
-    padding-bottom: 250px;
+    padding-bottom: 170px;
   }
 }
 .works__title {
@@ -552,6 +580,8 @@ section {
   .wbox1__img {
     height: 300px;
     max-height: 300px;
+    -o-object-position: top;
+       object-position: top;
   }
 }
 .wbox1__mask {
@@ -629,8 +659,8 @@ section {
 }
 @media (min-width: 769px) {
   .wbox2__text {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
     max-width: 268px;
     display: block;
   }
@@ -650,6 +680,7 @@ section {
 .others {
   background-color: #305c91;
   padding-bottom: 50px;
+  margin: -5px 0;
 }
 .others__title {
   color: #fafafa;
