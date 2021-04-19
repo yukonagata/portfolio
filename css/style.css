@@ -288,8 +288,13 @@ section {
   background-size: 135px;
 }
 .favorite__list {
-  width: 57%;
+  width: 70%;
   position: relative;
+}
+@media (min-width: 769px) {
+  .favorite__list {
+    width: 57%;
+  }
 }
 .favorite__itemtitle {
   padding: 20px;
