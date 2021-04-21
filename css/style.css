@@ -105,16 +105,16 @@ section {
 }
 
 .active span:first-child {
-  transform: rotate(45deg) translate(5px, -7px);
+  transform: rotate(45deg) translate(6px, -6px);
   transform-origin: left top;
 }
 
 .active span:nth-child(2) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  display: none;
 }
 
 .active span:last-child {
-  display: none;
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .gnavi__list {
@@ -395,7 +395,7 @@ section {
 
 .sbox {
   margin: 0 auto;
-  max-width: 675px;
+  max-width: 698px;
 }
 .sbox__wrap {
   flex-direction: column;
@@ -426,7 +426,7 @@ section {
 }
 @media (min-width: 769px) {
   .sbox__icon {
-    padding: 1.2%;
+    padding: 1.5%;
   }
 }
 .sbox__gauge {

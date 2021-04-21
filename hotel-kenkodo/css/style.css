@@ -77,6 +77,7 @@ h2 {
     background-color: #d3cbc6;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 .gnavi_reservation:hover,
@@ -404,6 +405,7 @@ p + .loop {
 .footer_list {
     margin-bottom: 50px;
     flex-direction: column;
+    text-align: center;
 }
 
 .footer_item {

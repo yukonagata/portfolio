@@ -5,6 +5,7 @@
     <title>永田夕子 | ポートフォリオサイト</title>
     <meta name="discription" content="永田夕子のポートフォリオサイトです。">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon-->
     <link rel="icon" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
     <!--ResetCss-->
@@ -21,312 +22,313 @@
 </head>
 
 <body>      
-        <!-- ヘッダー -->
-        <header class="header">
-            <div class="header__container">
-                <h1 class="header__title">Yuko Nagata</h1>
-                <p class="header__subtitle">Portfolio Site</p>
-            </div><!--/.header__container-->
-        <!-- ナビゲーション -->
-            <div id="gNaviBtn" class="header__gnavibtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div><!--/.gnavi_btn-->
-            <div class="header__gnavi gnavi">
-                <ul id="gNavi" class="gnavi__list">
-                    <li class="gnavi__item"><a href="#profile">Profile</a></li>
-                    <li class="gnavi__item"><a href="#favorite">Favorite</a></li>
-                    <li class="gnavi__item"><a href="#skill">Skill</a></li>
-                    <li class="gnavi__item"><a href="#works">Works</a></li>
-                    <li class="gnavi__item"><a href="#others">Others</a></li>
-                    <li class="gnavi__item"><a href="#contact">Contact</a></li>
+<!-- ヘッダー -->
+<header class="header">
+    <div class="header__container">
+        <h1 class="header__title">Yuko Nagata</h1>
+        <p class="header__subtitle">Portfolio Site</p>
+    </div><!--/.header__container-->
+<!-- ナビゲーション -->
+    <div id="gNaviBtn" class="header__gnavibtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div><!--/.gnavi_btn-->
+    <div class="header__gnavi gnavi">
+        <ul id="gNavi" class="gnavi__list">
+            <li class="gnavi__item"><a href="#profile">Profile</a></li>
+            <li class="gnavi__item"><a href="#favorite">Favorite</a></li>
+            <li class="gnavi__item"><a href="#skill">Skill</a></li>
+            <li class="gnavi__item"><a href="#works">Works</a></li>
+            <li class="gnavi__item"><a href="#others">Others</a></li>
+            <li class="gnavi__item"><a href="#contact">Contact</a></li>
+        </ul>
+    </div><!--/.header__gnavi gnavi-->
+</header>
+
+<!-- メイン -->
+<main class="main">
+    <!-- Profile -->
+    <img src="img/wave_profile_y.png" alt="" class="profile__wave" data-aos="fade-up" data-aos-duration="1500">
+    <div id="profile" class="profile">
+        <section class="profile__main">
+            <h2 class="profile__title" data-aos="fade-down" data-aos-duration="1500">Profile</h2>
+            <div class="profile__inner">
+                <img class="profile__icon" src="img/yukosicon.gif" alt="永田夕子の自画像アニメ">
+                <img class="profile__name" src="img/yukosname.png" alt="永田夕子">
+                <p class="profile__kana">ながた&emsp;ゆうこ</p>
+                <p class="profile__text">保育士では5年、事務では10年以上の実務経験があります。職が変わるごとに新しいやり方や知識が必要になりますが、日々学び、経験も生かしながら対応する力が身につきました。正確さや効率を考え、こつこつと取り組む作業が得意です。</p>
+                <p class="profile__text">職業訓練校では基礎からWeb制作を学んでおり、デザインが自分の書いたコードで形になっていく所に魅力を感じています。「こんな事出来るかな」と調べて実装したり、上手くいかない時に修正して正解を見つける工程も、今は楽しくて仕方がありません。</p>
+                <p class="profile__text">Web業界は未経験ですが、周りの環境や自分の状況が変わっても努力次第で続けられる仕事だと感じ、日々学習を続けています。</p>
+            </div>
+            <div class="profile__box flex">
+                <dl class="profile__career">
+                    <dt>安田女子短期大学</dt>
+                    <dd>保育科 卒業</dd>
+                    <dt>ナーガ福祉会 第二ナーガ保育園</dt>
+                    <dd>5年：乳児の保育（0〜3才まで）</dd>
+                    <dt>アプライド株式会社</dt>
+                    <dd>5年2ヵ月：パソコン量販店の営業事務</dd>
+                    <dt>広島県庁 システムヘルプデスク</dt>
+                    <dd>3年：電子入札システム操作や設定の支援</dd>
+                    <dt>広島県勤労者福祉推進協会</dt>
+                    <dd>4年1ヵ月：共済保険業の事務補助</dd>
+                    <dt>お手紙雑貨 つばめゆうびん</dt>
+                    <dd>7年：紙文具の販売（土日に自営で継続中）</dd>
+                </dl>
+                <div class="profile__imgcapbox">
+                    <img src="img/imgcaption.png" alt="訓練校の同期がヘアメイクして撮ってくれた写真です" class="profile__imgcap">
+                </div>
+            </div>
+        </section>
+    </div><!--/.profile-->
+
+    <!-- Favorite -->
+    <div id="favorite" class="favorite">
+        <section class="favorite__main">
+            <h2 class="favorite__title" data-aos="fade-down" data-aos-duration="1500">Favorite</h2>
+            <!-- Swiper -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li id="swiper__slide" class="swiper-slide">
+                        <div class="favorite__list">
+                            <p class="favorite__itemtitle">白島</p>
+                            <p class="favorite__item">住み始めて6年ほどですが、美味しいお店も揃っていて、のんびりした猫も多く、暮らしやすい町です。自営の雑貨店も白島に開いています。</p>
+                            <!-- <img src="img/favcap1.png" alt="大雨の日は川沿いの道にカニがいます" class="favorite__itemcap"> -->
+                        </div>
+                    </li>
+                    <li id="swiper__slide" class="swiper-slide">
+                        <div class="favorite__list">
+                            <p class="favorite__itemtitle">お好み焼き</p>
+                            <p class="favorite__item">麺がパリッとして、たまごが半熟のねぎかけ肉玉そばが大好物です。友人の鉄板焼き屋で6年アルバイトしていたので、自分で焼けます！</p>
+                            <!-- <img src="img/favcap1.png" alt="" class="favorite__itemcap"> -->
+                        </div>
+                    </li>
+                    <li id="swiper__slide" class="swiper-slide">
+                        <div class="favorite__list">
+                            <p class="favorite__itemtitle">お笑い</p>
+                            <p class="favorite__item">ネタ番組は欠かさず見ていて、某コンビのファン歴は21年になります。当時は好きな気持ちだけで、分からないなりにタグを編集し、ファンサイトも作っていました。</p>
+                            <!-- <img src="img/favcap1.png" alt="" class="favorite__itemcap"> -->
+                        </div>
+                    </li>
+                    <li id="swiper__slide" class="swiper-slide">
+                        <div class="favorite__list">
+                            <p class="favorite__itemtitle">家族</p>
+                            <p class="favorite__item">ポジティブな父と、すぐやる課の母と、どの年齢とでも話が合う弟と、笑い上戸な私の4人家族です。揃うと大喜利大会のように騒がしくなりますが、大好きなひとときです。</p>
+                            <!-- <img src="img/favcap1.png" alt="" class="favorite__itemcap"> -->
+                        </div>
+                    </li>
                 </ul>
-            </div><!--/.header__gnavi gnavi-->
-        </header>
-    <!-- メイン -->
-    <main class="main">
-        <!-- Profile -->
-        <img src="img/wave_profile_y.png" alt="" class="profile__wave" data-aos="fade-up" data-aos-duration="1500">
-        <div id="profile" class="profile">
-            <section class="profile__main">
-                <h2 class="profile__title" data-aos="fade-down" data-aos-duration="1500">Profile</h2>
-                <div class="profile__inner">
-                    <img class="profile__icon" src="img/yukosicon.gif" alt="永田夕子の自画像アニメ">
-                    <img class="profile__name" src="img/yukosname.png" alt="永田夕子">
-                    <p class="profile__kana">ながた&emsp;ゆうこ</p>
-                    <p class="profile__text">保育士では5年、事務では10年以上の実務経験があります。職が変わるごとに新しいやり方や知識が必要になりますが、日々学び、経験も生かしながら対応する力が身につきました。正確さや効率を考え、こつこつと取り組む作業が得意です。</p>
-                    <p class="profile__text">職業訓練校では基礎からWeb制作を学んでおり、デザインが自分の書いたコードで形になっていく所に魅力を感じています。「こんな事出来るかな」と調べて実装したり、上手くいかない時に修正して正解を見つける工程も、今は楽しくて仕方がありません。</p>
-                    <p class="profile__text">Web業界は未経験ですが、周りの環境や自分の状況が変わっても努力次第で続けられる仕事だと感じ、日々学習を続けています。</p>
-                </div>
-                <div class="profile__box flex">
-                    <dl class="profile__career">
-                        <dt>安田女子短期大学</dt>
-                        <dd>保育科 卒業</dd>
-                        <dt>ナーガ福祉会 第二ナーガ保育園</dt>
-                        <dd>5年：乳児の保育（0〜3才まで）</dd>
-                        <dt>アプライド株式会社</dt>
-                        <dd>5年2ヵ月：パソコン量販店の営業事務</dd>
-                        <dt>広島県庁 システムヘルプデスク</dt>
-                        <dd>3年：電子入札システム操作や設定の支援</dd>
-                        <dt>広島県勤労者福祉推進協会</dt>
-                        <dd>4年1ヵ月：共済保険業の事務補助</dd>
-                        <dt>お手紙雑貨 つばめゆうびん</dt>
-                        <dd>7年：紙文具の販売（土日に自営で継続中）</dd>
-                    </dl>
-                    <div class="profile__imgcapbox">
-                        <img src="img/imgcaption.png" alt="訓練校の同期がヘアメイクして撮ってくれた写真です" class="profile__imgcap">
-                    </div>
-                </div>
-            </section>
-        </div><!--/.profile-->
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+    </div><!--/.favorite-->
 
-        <!-- Favorite -->
-        <div id="favorite" class="favorite">
-            <section class="favorite__main">
-                <h2 class="favorite__title" data-aos="fade-down" data-aos-duration="1500">Favorite</h2>
-                <!-- Swiper -->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-container">
-                    <ul class="swiper-wrapper">
-                        <li id="swiper__slide" class="swiper-slide">
-                            <div class="favorite__list">
-                                <p class="favorite__itemtitle">白島</p>
-                                <p class="favorite__item">住み始めて6年ほどですが、美味しいお店も揃っていて、のんびりした猫も多く、暮らしやすい町です。自営の雑貨店も白島に開いています。</p>
-                                <!-- <img src="img/favcap1.png" alt="大雨の日は川沿いの道にカニがいます" class="favorite__itemcap"> -->
-                            </div>
-                        </li>
-                        <li id="swiper__slide" class="swiper-slide">
-                            <div class="favorite__list">
-                                <p class="favorite__itemtitle">お好み焼き</p>
-                                <p class="favorite__item">麺がパリッとして、たまごが半熟のねぎかけ肉玉そばが大好物です。友人の鉄板焼き屋で6年アルバイトしていたので、自分で焼けます！</p>
-                                <!-- <img src="img/favcap1.png" alt="" class="favorite__itemcap"> -->
-                            </div>
-                        </li>
-                        <li id="swiper__slide" class="swiper-slide">
-                            <div class="favorite__list">
-                                <p class="favorite__itemtitle">お笑い</p>
-                                <p class="favorite__item">ネタ番組は欠かさず見ていて、某コンビのファン歴は21年になります。当時は好きな気持ちだけで、分からないなりにタグを編集し、ファンサイトも作っていました。</p>
-                                <!-- <img src="img/favcap1.png" alt="" class="favorite__itemcap"> -->
-                            </div>
-                        </li>
-                        <li id="swiper__slide" class="swiper-slide">
-                            <div class="favorite__list">
-                                <p class="favorite__itemtitle">家族</p>
-                                <p class="favorite__item">ポジティブな父と、すぐやる課の母と、どの年齢とでも話が合う弟と、笑い上戸な私の4人家族です。揃うと大喜利大会のように騒がしくなりますが、大好きなひとときです。</p>
-                                <!-- <img src="img/favcap1.png" alt="" class="favorite__itemcap"> -->
-                            </div>
-                        </li>
+    <!-- Skill -->
+    <div id="skill" class="skill">
+        <section class="skill__main">
+            <h2 class="skill__title" data-aos="fade-down" data-aos-duration="1500">Skill</h2>
+            <div class="skill__box sbox">
+                <div class="sbox__wrap flex">
+                    <div class="sbox__icon">
+                        <p class="sbox__gauge sbox__gauge--t">コーディング</p>
+                    </div><!--/.sbox__icon-->
+                    <div class="sbox__icon">
+                        <p class="sbox__gauge sbox__gauge--90">90%</p>
+                        <p class="sbox__cap">HTML5</p>
+                    </div><!--/.sbox__icon-->
+                    <div class="sbox__icon">
+                        <p class="sbox__gauge sbox__gauge--90">90%</p>
+                        <p class="sbox__cap">CSS3 / Sass</p>
+                    </div><!--/.sbox__icon-->
+                    <div class="sbox__icon">
+                        <p class="sbox__gauge sbox__gauge--30">30%</p>
+                        <p class="sbox__cap">JavaScript</p>
+                    </div><!--/.sbox__icon-->
+                    <div class="sbox__icon">
+                        <p class="sbox__gauge sbox__gauge--50">50%</p>
+                        <p class="sbox__cap">WordPress</p>
+                    </div><!--/.sbox__icon-->
+                    <div class="sbox__icon">
+                        <p class="sbox__gauge sbox__gauge--t">デザイン</p>
+                    </div><!--/.sbox__icon-->
+                    <div class="sbox__icon">
+                        <p class="sbox__gauge sbox__gauge--70">70%</p>
+                        <p class="sbox__cap">illustrator</p>
+                    </div><!--/.sbox__icon-->
+                    <div class="sbox__icon">
+                        <p class="sbox__gauge sbox__gauge--70">70%</p>
+                        <p class="sbox__cap">Photoshop</p>
+                    </div><!--/.sbox__icon-->
+                    <div class="sbox__icon">
+                        <p class="sbox__gauge sbox__gauge--70">70%</p>
+                        <p class="sbox__cap">XD</p>
+                    </div><!--/.sbox__icon-->
+                </div><!--/.sbox__wrap flex-->
+                <div class="sbox__wrap flex">
+                    <div class="sbox__icon">
+                        <p class="sbox__gauge sbox__gauge--t">その他資格</p>
+                    </div><!--/.sbox__icon-->
+                    <ul class="sbox__list">
+                        <li class="sbox__item">保育士免許 / 幼稚園教諭二種免許</li>
+                        <li class="sbox__item">日商簿記3級</li>
+                        <li class="sbox__item">マイクロソフトオフィス 2003<br>Word / Excel Expert / PowerPoint / Access</li>
+                        <li class="sbox__item">WEBクリエイター能力認定試験</li>
                     </ul>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                </div><!--/.sbox__wrap flex-->
+            </div><!--/.skill__box .sbox-->
+        </section>
+    </div><!--/.skill-->
+
+    <!-- Works -->
+    <div id="works" class="works">
+        <section class="works__main">
+            <h2 class="works__title" data-aos="fade-down" data-aos-duration="1500">Works</h2>
+            <div class="works__wrap1">
+                <div class="works__box wbox1">
+                    <img src="img/works_pc1.png" alt="健康堂のトップページ画像" class="wbox1__img">
+                    <a href="hotel-kenkodo/index.html" target="_blank" rel="noopener">
+                        <div class="wbox1__mask">
+                            <h3 class="wbox1__title">架空旅館サイト</h3>
+                            <p class="wbox1__text">21年1月/HTML CSS<br>ターゲット：30代前後のカップル</p>
+                            <p class="wbox1__text">ゆったりと自分たちのペースで、普段より少し贅沢な気持ちで過ごせる一棟貸しの宿をイメージしました。</p>
+                            <p class="wbox1__text">21年1月の制作物で、現在新しく学んだことを追加し修正中です。</p>
+                        </div><!--/.works__mask1-->
+                    </a>
+                </div><!--/.works__box1-->
+                <div class="works__box wbox1">
+                    <img src="img/works_pc2.png" alt="制作物の画像" class="wbox1__img">
+                    <a href="ourvineyard/index.html" target="_blank" rel="noopener">
+                        <div class="wbox1__mask">
+                            <h3 class="wbox1__title">架空ワイナリーサイト</h3>
+                            <p class="wbox1__text">21年1月/Bootstrap</p>
+                            <p class="wbox1__text">課題のデザインカンプを元に、Bootstrapで作成しました。たくさんあるパーツを活用しきれていない部分があるので、もっと学習を深めていきたいです。</p>
+                        </div><!--/.works__mask1-->
+                    </a>
+                </div><!--/.works__box1-->
+                <div class="works__box wbox1">
+                    <img src="img/works_pc3.png" alt="サイトのトップページ画像" class="wbox1__img">
+                    <a href="https://pc-hana.com/onkatsudo/team-a/" target="_blank" rel="noopener">
+                        <div class="wbox1__mask">
+                            <h3 class="wbox1__title">温活動アカデミー(卒業制作)</h3>
+                            <p class="wbox1__text">21年4月/HTML CSS Sass JavaScript jQuery<br>ターゲット：セラピスト養成スクールを探している女性</p>
+                            <p class="wbox1__text">メインコーダーを担当しました。都度チームで考えを共有しながら、デザイナーの思いに近づけるように、コードは他の人が修正する時に分かりやすいように、という点を工夫しています。
+                            </p>
+                        </div><!--/.works__mask1-->
+                    </a>
+                </div><!--/.works__box1-->
+            </div><!--/.works__wrap1 flex-->
+
+            <div class="works__wrap2">
+                <div class="works__box wbox2">
+                    <h3 class="wbox2__title">カンプ制作</h3>
+                    <p class="wbox2__text">XD講座課題<br>ターゲット：子育て中の女性</p>
+                    <p class="wbox2__text">安心して通院や相談ができ、家族で通いたいと感じられるような、やわらかい雰囲気を目指しました。</p>
+                    <img src="img/xd_dental.png" alt="歯科サイトのデザインカンプ" class="wbox2__img">
+                </div><!--/.works__box2-->
+                <div class="works__box wbox2">
+                    <h3 class="wbox2__title">ラベル制作</h3>
+                    <p class="wbox2__text">授業課題<br>ターゲット：訓練校の掃除当番</p>
+                    <p class="wbox2__text">除菌スプレーと分かるのに必要な情報を絞り、机周りを邪魔しないよう色を抑えています。気づいた人だけに読んでもらえるよう、英字の余談部分も作りました。</p>
+                    <img src="img/osban.png" alt="消毒液のラベルデザイン" class="wbox2__img">
+                </div><!--/.works__box2-->
+                <div class="works__box wbox2">
+                    <h3 class="wbox2__title">ロゴ制作</h3>
+                    <p class="wbox2__text">卒業制作チーム内コンペ<br>ターゲット：セラピスト養成スクールを探している女性</p>
+                    <p class="wbox2__text">リンパマッサージやハンドケアなどを連想出来るよう、手のイラスト（向かい合わせの講師と生徒のイメージ）を使用しました。</p>
+                    <img src="img/on-katsudo.png" alt="温活動アカデミーのロゴデザイン" class="wbox2__img">
+                </div><!--/.works__box2-->
+                <div class="works__box wbox2">
+                    <h3 class="wbox2__title">プレゼン資料制作</h3>
+                    <p class="wbox2__text">授業課題<br>ターゲット：コーディングを学習している訓練校生</p>
+                    <p class="wbox2__text">ノーコードの説明・WEBページ作成ツール"STUDIO"の紹介と、実際に制作した感想などを15分にまとめ、発表しました。</p>
+                    <img src="img/powerpoint.jpg" alt="パワーポイントでプレゼンテーションをしている自分の写真" class="wbox2__img">
+                </div><!--/.works__box2-->
+            </div><!--/.works__wrap2 flex-->
+        </section>
+    </div><!--/.works-->
+
+    <!-- Others -->
+    <div id="others" class="others">
+        <section class="others__main">
+            <h2 class="others__title" data-aos="fade-down" data-aos-duration="1500">Others</h2>
+            <p class="others__text">なんでもやってみようの精神で、色んなことにチャレンジ中です。</p>
+            <div class="others__box obox flex">
+                <div class="obox__inner">
+                    <a href="https://preview.studio.site/live/EjOQpoQLWJ/1" target="_blank" rel="noopener">
+                    <h3 class="obox__title">サイト制作(ノーコード)</h3>
+                    <p class="obox__text">使用ツール：STUDIO</p>
+                    <p class="obox__text">XDのカンプをもとに制作しました。分かりやすく感覚的に使用出来る反面、配置の制約や工夫が必要な部分があるので、デザインを近づけようと現在も修正中です。</p>
+                    <img src="img/st_dental.png" alt="XDデンタルクリニックへ" class="obox__item">
+                    </a>
+                </div><!--/.obox__inner-->
+                <div class="obox__inner">
+                    <a href="https://store.line.me/stickershop/product/1169242/ja" target="_blank" rel="noopener">
+                        <h3 class="obox__title">LINEスタンプ制作</h3>
+                        <p class="obox__text">使用ツール：FireAlpaca</p>
+                        <p class="obox__text">手書きをスキャンし、フリーソフトで編集しました。自分好みに作りましたが、買ってくれた方からリクエストやアドバイスをもらえ、新たな発見がありました。</p>
+                        <img src="img/others_yds.png" alt="余談ズのLINEスタンプアイコン" class="obox__item">
+                    </a>
+                </div><!--/.obox__inner-->
+            </div><!--/.others__box obox flex-->
+        </section>
+    </div><!--/.others-->
+
+    <!-- Contact -->
+    <div id="contact" class="contact">
+        <section class="contact__main" >
+            <h2 class="contact__title"data-aos="fade-down" data-aos-duration="1500">Contact</h2>
+            <!-- formrun -->
+            <form class="formrun contact__form form" action="https://form.run/api/v1/r/vwt774csawecfw28pjw1ij8c" method="post">
+                <div class="form__inner">
+                <label class="form__label">お名前 [必須]</label>
+                <input name="お名前" type="text" class="form__name" placeholder="例) 永田&emsp;太郎" data-formrun-required>
+                <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
+                </div><!--/.form__inner-->
+            
+                <div class="form__inner">
+                <label class="form__label">メールアドレス [必須]</label>
+                <input name="メールアドレス" type="text" placeholder="例）mail@example.com" class="form__email" data-formrun-type="email" data-formrun-required>
+                <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                </div><!--/.form__inner-->
+            
+                <div class="form__inner">
+                <label class="form__label">お問い合わせ [必須]</label>
+                <textarea name="お問い合わせ" placeholder="お気軽にお問い合わせください" class="form__message" data-formrun-required></textarea>
+                <div data-formrun-show-if-error="お問い合わせ">内容を入力してください</div>
+                </div><!--/.form__inner-->
+                
+                <!-- ボット投稿をブロックするためのタグ -->
+                <div class="_formrun_gotcha">
+                <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+                <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
                 </div>
-            </section>
-        </div><!--/.favorite-->
+            
+                <button type="submit" class="form__btn" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信する</button>
+            </form><!-- formrunここまで -->
+        </section>
+    </div><!--/.contact-->
+</main>
 
-        <!-- Skill -->
-        <div id="skill" class="skill">
-            <section class="skill__main">
-                <h2 class="skill__title" data-aos="fade-down" data-aos-duration="1500">Skill</h2>
-                <div class="skill__box sbox">
-                    <div class="sbox__wrap flex">
-                        <div class="sbox__icon">
-                            <p class="sbox__gauge sbox__gauge--t">コーディング</p>
-                        </div><!--/.sbox__icon-->
-                        <div class="sbox__icon">
-                            <p class="sbox__gauge sbox__gauge--90">90%</p>
-                            <p class="sbox__cap">HTML5</p>
-                        </div><!--/.sbox__icon-->
-                        <div class="sbox__icon">
-                            <p class="sbox__gauge sbox__gauge--90">90%</p>
-                            <p class="sbox__cap">CSS3 / Sass</p>
-                        </div><!--/.sbox__icon-->
-                        <div class="sbox__icon">
-                            <p class="sbox__gauge sbox__gauge--30">30%</p>
-                            <p class="sbox__cap">JavaScript</p>
-                        </div><!--/.sbox__icon-->
-                        <div class="sbox__icon">
-                            <p class="sbox__gauge sbox__gauge--50">50%</p>
-                            <p class="sbox__cap">WordPress</p>
-                        </div><!--/.sbox__icon-->
-                        <div class="sbox__icon">
-                            <p class="sbox__gauge sbox__gauge--t">デザイン</p>
-                        </div><!--/.sbox__icon-->
-                        <div class="sbox__icon">
-                            <p class="sbox__gauge sbox__gauge--70">70%</p>
-                            <p class="sbox__cap">illustrator</p>
-                        </div><!--/.sbox__icon-->
-                        <div class="sbox__icon">
-                            <p class="sbox__gauge sbox__gauge--70">70%</p>
-                            <p class="sbox__cap">Photoshop</p>
-                        </div><!--/.sbox__icon-->
-                        <div class="sbox__icon">
-                            <p class="sbox__gauge sbox__gauge--70">70%</p>
-                            <p class="sbox__cap">XD</p>
-                        </div><!--/.sbox__icon-->
-                    </div><!--/.sbox__wrap flex-->
-                    <div class="sbox__wrap flex">
-                        <div class="sbox__icon">
-                            <p class="sbox__gauge sbox__gauge--t">その他資格</p>
-                        </div><!--/.sbox__icon-->
-                        <ul class="sbox__list">
-                            <li class="sbox__item">保育士免許 / 幼稚園教諭二種免許</li>
-                            <li class="sbox__item">日商簿記3級</li>
-                            <li class="sbox__item">マイクロソフトオフィス 2003<br>Word / Excel Expert / PowerPoint / Access</li>
-                            <li class="sbox__item">WEBクリエイター能力認定試験</li>
-                        </ul>
-                    </div><!--/.sbox__wrap flex-->
-                </div><!--/.skill__box .sbox-->
-            </section>
-        </div><!--/.skill-->
-
-        <!-- Works -->
-        <div id="works" class="works">
-            <section class="works__main">
-                <h2 class="works__title" data-aos="fade-down" data-aos-duration="1500">Works</h2>
-                <div class="works__wrap1">
-                    <div class="works__box wbox1">
-                        <img src="img/works_pc1.png" alt="健康堂のトップページ画像" class="wbox1__img">
-                        <a href="hotel-kenkodo/index.html" target="_blank" rel="noopener">
-                            <div class="wbox1__mask">
-                                <h3 class="wbox1__title">架空旅館サイト</h3>
-                                <p class="wbox1__text">21年1月/HTML CSS<br>ターゲット：30代前後のカップル</p>
-                                <p class="wbox1__text">ゆったりと自分たちのペースで、普段より少し贅沢な気持ちで過ごせる一棟貸しの宿をイメージしました。</p>
-                                <p class="wbox1__text">21年1月の制作物で、現在新しく学んだことを追加し修正中です。</p>
-                            </div><!--/.works__mask1-->
-                        </a>
-                    </div><!--/.works__box1-->
-                    <div class="works__box wbox1">
-                        <img src="img/works_pc2.png" alt="制作物の画像" class="wbox1__img">
-                        <a href="ourvineyard/index.html" target="_blank" rel="noopener">
-                            <div class="wbox1__mask">
-                                <h3 class="wbox1__title">架空ワイナリーサイト</h3>
-                                <p class="wbox1__text">21年1月/Bootstrap</p>
-                                <p class="wbox1__text">課題のデザインカンプを元に、Bootstrapで作成しました。たくさんあるパーツを活用しきれていない部分があるので、もっと学習を深めていきたいです。</p>
-                            </div><!--/.works__mask1-->
-                        </a>
-                    </div><!--/.works__box1-->
-                    <div class="works__box wbox1">
-                        <img src="img/works_pc3.png" alt="サイトのトップページ画像" class="wbox1__img">
-                        <a href="https://pc-hana.com/onkatsudo/team-a/" target="_blank" rel="noopener">
-                            <div class="wbox1__mask">
-                                <h3 class="wbox1__title">温活動アカデミー(卒業制作)</h3>
-                                <p class="wbox1__text">21年4月/HTML CSS Sass JavaScript jQuery<br>ターゲット：セラピスト養成スクールを探している女性</p>
-                                <p class="wbox1__text">メインコーダーを担当しました。都度チームで考えを共有しながら、デザイナーの思いに近づけるように、コードは他の人が修正する時に分かりやすいように、という点を工夫しています。
-                                </p>
-                            </div><!--/.works__mask1-->
-                        </a>
-                    </div><!--/.works__box1-->
-                </div><!--/.works__wrap1 flex-->
-
-                <div class="works__wrap2">
-                    <div class="works__box wbox2">
-                        <h3 class="wbox2__title">カンプ制作</h3>
-                        <p class="wbox2__text">XD講座課題<br>ターゲット：子育て中の女性</p>
-                        <p class="wbox2__text">安心して通院や相談ができ、家族で通いたいと感じられるような、やわらかい雰囲気を目指しました。</p>
-                        <img src="img/xd_dental.png" alt="歯科サイトのデザインカンプ" class="wbox2__img">
-                    </div><!--/.works__box2-->
-                    <div class="works__box wbox2">
-                        <h3 class="wbox2__title">ラベル制作</h3>
-                        <p class="wbox2__text">授業課題<br>ターゲット：訓練校の掃除当番</p>
-                        <p class="wbox2__text">除菌スプレーと分かるのに必要な情報を絞り、机周りを邪魔しないよう色を抑えています。気づいた人だけに読んでもらえるよう、英字の余談部分も作りました。</p>
-                        <img src="img/osban.png" alt="消毒液のラベルデザイン" class="wbox2__img">
-                    </div><!--/.works__box2-->
-                    <div class="works__box wbox2">
-                        <h3 class="wbox2__title">ロゴ制作</h3>
-                        <p class="wbox2__text">卒業制作チーム内コンペ<br>ターゲット：セラピスト養成スクールを探している女性</p>
-                        <p class="wbox2__text">リンパマッサージやハンドケアなどを連想出来るよう、手のイラスト（向かい合わせの講師と生徒のイメージ）を使用しました。</p>
-                        <img src="img/on-katsudo.png" alt="温活動アカデミーのロゴデザイン" class="wbox2__img">
-                    </div><!--/.works__box2-->
-                    <div class="works__box wbox2">
-                        <h3 class="wbox2__title">プレゼン資料制作</h3>
-                        <p class="wbox2__text">授業課題<br>ターゲット：コーディングを学習している訓練校生</p>
-                        <p class="wbox2__text">ノーコードの説明・WEBページ作成ツール"STUDIO"の紹介と、実際に制作した感想などを15分にまとめ、発表しました。</p>
-                        <img src="img/powerpoint.jpg" alt="パワーポイントでプレゼンテーションをしている自分の写真" class="wbox2__img">
-                    </div><!--/.works__box2-->
-                </div><!--/.works__wrap2 flex-->
-            </section>
-        </div><!--/.works-->
-
-        <!-- Others -->
-        <div id="others" class="others">
-            <section class="others__main">
-                <h2 class="others__title" data-aos="fade-down" data-aos-duration="1500">Others</h2>
-                <p class="others__text">なんでもやってみようの精神で、色んなことにチャレンジ中です。</p>
-                <div class="others__box obox flex">
-                    <div class="obox__inner">
-                        <a href="https://preview.studio.site/live/EjOQpoQLWJ/1" target="_blank" rel="noopener">
-                        <h3 class="obox__title">サイト制作(ノーコード)</h3>
-                        <p class="obox__text">使用ツール：STUDIO</p>
-                        <p class="obox__text">XDのカンプをもとに制作しました。分かりやすく感覚的に使用出来る反面、配置の制約や工夫が必要な部分があるので、デザインを近づけようと現在も修正中です。</p>
-                        <img src="img/st_dental.png" alt="XDデンタルクリニックへ" class="obox__item">
-                        </a>
-                    </div><!--/.obox__inner-->
-                    <div class="obox__inner">
-                        <a href="https://store.line.me/stickershop/product/1169242/ja" target="_blank" rel="noopener">
-                            <h3 class="obox__title">LINEスタンプ制作</h3>
-                            <p class="obox__text">使用ツール：FireAlpaca</p>
-                            <p class="obox__text">手書きをスキャンし、フリーソフトで編集しました。自分好みに作りましたが、買ってくれた方からリクエストやアドバイスをもらえ、新たな発見がありました。</p>
-                            <img src="img/others_yds.png" alt="余談ズのLINEスタンプアイコン" class="obox__item">
-                        </a>
-                    </div><!--/.obox__inner-->
-                </div><!--/.others__box obox flex-->
-            </section>
-        </div><!--/.others-->
-
-        <!-- Contact -->
-        <div id="contact" class="contact">
-            <section class="contact__main" >
-                <h2 class="contact__title"data-aos="fade-down" data-aos-duration="1500">Contact</h2>
-                <!-- formrun -->
-                <form class="formrun contact__form form" action="https://form.run/api/v1/r/vwt774csawecfw28pjw1ij8c" method="post">
-                    <div class="form__inner">
-                    <label class="form__label">お名前 [必須]</label>
-                    <input name="お名前" type="text" class="form__name" placeholder="例) 永田&emsp;太郎" data-formrun-required>
-                    <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
-                    </div><!--/.form__inner-->
-                
-                    <div class="form__inner">
-                    <label class="form__label">メールアドレス [必須]</label>
-                    <input name="メールアドレス" type="text" placeholder="例）mail@example.com" class="form__email" data-formrun-type="email" data-formrun-required>
-                    <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
-                    </div><!--/.form__inner-->
-                
-                    <div class="form__inner">
-                    <label class="form__label">お問い合わせ [必須]</label>
-                    <textarea name="お問い合わせ" placeholder="お気軽にお問い合わせください" class="form__message" data-formrun-required></textarea>
-                    <div data-formrun-show-if-error="お問い合わせ">内容を入力してください</div>
-                    </div><!--/.form__inner-->
-                    
-                    <!-- ボット投稿をブロックするためのタグ -->
-                    <div class="_formrun_gotcha">
-                    <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
-                    <label for="_formrun_gotcha">If you are a human, ignore this field</label>
-                    <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
-                    </div>
-                
-                    <button type="submit" class="form__btn" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信する</button>
-                </form>
-                <!-- formrunここまで -->
-            </section>
-        </div><!--/.contact-->
-    </main>
-        <!-- footer -->
-        <footer class="footer"><small class="footer__copyright">&copy;2021 Yuko Nagata</small></footer>
-        <!-- topBtn -->
-        <div id="topBtn" class="topbtn">
-            <a class="topbtn__link" href="#top"><p>▲</p>
-            <img src="img/topbtn__icon.png" alt="topページに戻る浮き輪アイコン" class="topbtn__icon"></a>
-        </div><!--/.topbtn-->
-        <!--SwiperJavaScript-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-        <!--AOSanimation-->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <!--MyJavaScript-->
-        <script src="js/script.js"></script>
-        <!--formrunJavaScript-->
-        <script src="https://sdk.form.run/js/v2/formrun.js"></script>
-    </body>
-    </html>
+    <!-- footer -->
+    <footer class="footer"><small class="footer__copyright">&copy;2021 Yuko Nagata</small></footer>
+    <!-- topBtn -->
+    <div id="topBtn" class="topbtn">
+        <a class="topbtn__link" href="#top"><p>▲</p>
+        <img src="img/topbtn__icon.png" alt="topページに戻る浮き輪アイコン" class="topbtn__icon"></a>
+    </div><!--/.topbtn-->
+    <!--SwiperJavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <!--AOSanimation-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--MyJavaScript-->
+    <script src="js/script.js"></script>
+    <!--formrunJavaScript-->
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+</body>
+</html>
