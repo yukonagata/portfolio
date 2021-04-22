@@ -558,16 +558,16 @@ section {
 }
 .works__wrap1 {
   width: 100%;
-  background-image: url(../img/bgworks.png);
-  background-repeat: no-repeat;
-  background-size: 200px;
-  background-position: right bottom 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media (min-width: 769px) {
   .works__wrap1 {
+    background-image: url(../img/bgworks.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: right bottom 10px;
     display: block;
     -moz-column-count: 2;
          column-count: 2;
