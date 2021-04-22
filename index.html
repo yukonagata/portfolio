@@ -286,20 +286,20 @@
             <!-- formrun -->
             <form class="formrun contact__form form" action="https://form.run/api/v1/r/vwt774csawecfw28pjw1ij8c" method="post">
                 <div class="form__inner">
-                <label class="form__label">お名前 [必須]</label>
-                <input name="お名前" type="text" class="form__name" placeholder="例) 永田&emsp;太郎" data-formrun-required>
+                <label class="form__label" id="name">お名前 [必須]</label>
+                <input name="お名前" type="text" class="form__name" id="name" placeholder="例) 永田&emsp;太郎" data-formrun-required>
                 <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
                 </div><!--/.form__inner-->
             
                 <div class="form__inner">
-                <label class="form__label">メールアドレス [必須]</label>
-                <input name="メールアドレス" type="text" placeholder="例）mail@example.com" class="form__email" data-formrun-type="email" data-formrun-required>
+                <label class="form__label" for="email">メールアドレス [必須]</label>
+                <input name="メールアドレス" type="text" placeholder="例）mail@example.com" class="form__email" id="email" data-formrun-type="email" data-formrun-required>
                 <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
                 </div><!--/.form__inner-->
             
                 <div class="form__inner">
-                <label class="form__label">お問い合わせ [必須]</label>
-                <textarea name="お問い合わせ" placeholder="お気軽にお問い合わせください" class="form__message" data-formrun-required></textarea>
+                <label class="form__label" for="message">お問い合わせ [必須]</label>
+                <textarea name="お問い合わせ" placeholder="お気軽にお問い合わせください" class="form__message" id="message" data-formrun-required></textarea>
                 <div data-formrun-show-if-error="お問い合わせ">内容を入力してください</div>
                 </div><!--/.form__inner-->
                 
