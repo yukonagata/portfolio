@@ -305,13 +305,13 @@ section {
     font-size: 32px;
   }
 }
-.favorite__itemcap {
+.favorite__itemcap--1 {
   padding-top: 30px;
   width: 100%;
 }
 @media (min-width: 769px) {
-  .favorite__itemcap {
-    width: 75%;
+  .favorite__itemcap--1 {
+    width: 80%;
   }
 }
 .favorite__itemcap--2 {
@@ -331,7 +331,7 @@ section {
   }
 }
 .favorite__itemcap--4 {
-  padding-top: 25px;
+  padding-top: 20px;
   width: 80%;
 }
 @media (min-width: 769px) {

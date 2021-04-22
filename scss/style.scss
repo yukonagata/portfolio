@@ -336,11 +336,14 @@ section {
     }
 
     &__itemcap{
-        padding-top: 30px;
-        width: 100%;
 
-        @include pc {
-            width: 75%;
+        &--1 {
+            padding-top: 30px;
+            width: 100%;
+    
+            @include pc {
+                width: 80%;
+            }
         }
 
         &--2 {
@@ -360,7 +363,7 @@ section {
         }
 
         &--4 {
-            padding-top: 25px;
+            padding-top: 20px;
             width: 80%;
 
             @include pc {
