@@ -298,15 +298,45 @@ section {
 }
 .favorite__itemtitle {
   padding: 20px;
-  font-size: 32px;
+  font-size: 24px;
+}
+@media (min-width: 769px) {
+  .favorite__itemtitle {
+    font-size: 32px;
+  }
 }
 .favorite__itemcap {
-  padding-top: 50px;
+  padding-top: 30px;
   width: 100%;
 }
 @media (min-width: 769px) {
   .favorite__itemcap {
-    width: 70%;
+    width: 75%;
+  }
+}
+.favorite__itemcap--2 {
+  padding-top: 20px;
+}
+@media (min-width: 769px) {
+  .favorite__itemcap--2 {
+    width: 85%;
+  }
+}
+.favorite__itemcap--3 {
+  padding-top: 15px;
+}
+@media (min-width: 769px) {
+  .favorite__itemcap--3 {
+    width: 100%;
+  }
+}
+.favorite__itemcap--4 {
+  padding-top: 25px;
+  width: 80%;
+}
+@media (min-width: 769px) {
+  .favorite__itemcap--4 {
+    width: 65%;
   }
 }
 
