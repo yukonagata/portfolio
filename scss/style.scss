@@ -86,13 +86,13 @@ section {
     }
 
     &__title {
-        padding-top: 40vh;
+        padding-top: 36vh;
         font-size: 64px;
         font-weight: 300;
         font-family: 'Ubuntu';
 
         @include pc {
-            padding-top: 45vh;
+            padding-top: 40vh;
             font-size: 80px;
         }
     }
@@ -452,7 +452,7 @@ section {
 .skill {
     margin: -5px 0;
     padding-bottom: 100px;
-    background-color: #fafafa;
+    background-color: $color-bg;
     background-image: url(../img/bgwave_skill.gif);
     background-repeat: no-repeat;
     background-position: center bottom -5px;
@@ -513,7 +513,7 @@ section {
         background-size: cover;
         background-position: center;
         border-radius: 50%;
-        border: 7px solid #305c91;
+        border: 7px solid $color-blue;
         line-height: 86px;
         font-size: 32px;
 
@@ -788,7 +788,7 @@ section {
     margin: -5px 0;
             
     &__title {
-        color: #fafafa;
+        color: $color-bg;
         background-image: url(../img/circle_blue.png);
         background-repeat: no-repeat;
         background-size: 135px;
@@ -816,7 +816,7 @@ section {
             padding: 1em;
             max-width: 500px;
             border-radius: 10px;
-            background: #fafafa;
+            background: $color-bg;
             align-self: flex-start;
 
             @include pc {
@@ -876,7 +876,7 @@ section {
         margin: 0 auto;
         padding: 0;
         max-width: 936px;
-        background: #fafafa;
+        background: $color-bg;
         border-radius: 10px;
         position: relative;
     }
@@ -886,7 +886,7 @@ section {
         margin: auto;
         width: 0px;
         height: 0px;
-        border-top: 100px solid #ffebeb;
+        border-top: 100px solid $color-pink;
         border-right: 30vw solid transparent;
         border-bottom: 0 solid transparent;
         border-left: 30vw solid transparent;
@@ -941,7 +941,7 @@ section {
     &__btn {
         margin: 20px auto 10px;
         width: 70%;
-        background-color: #ffebeb;
+        background-color: $color-pink;
         border-radius: 10px;
         display: block;
         line-height: 3em;
@@ -952,7 +952,7 @@ section {
 /* フッター----------------------------------*/
 .footer {
     padding: 270px 0 30px;
-    background-color: #305c91;
+    background-color: $color-blue;
     text-align: center;
     background-image: url(../img/bgfooter.png);
     background-repeat: no-repeat;
@@ -967,7 +967,7 @@ section {
 
     &__copyright {
         font-size: 14px;
-        color: #fafafa;
+        color: $color-bg;
     }
 }
 
