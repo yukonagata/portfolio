@@ -66,34 +66,6 @@ h2 {
     right: 0;
 }
 
-.gnavi_reservation,
-.gnavi_hotel {
-    padding: 20px 5px;
-    position: fixed;
-    top: 150px;
-    right: 0;
-    width: 50px;
-    height: auto;
-    background-color: #d3cbc6;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-}
-
-.gnavi_reservation:hover,
-.gnavi_hotel:hover {
-    outline: 2px solid #fff;
-    outline-offset: -5px;
-}
-
-.gnavi_hotel {
-    top: 265px;
-}
-
-.gnavi_text {
-    writing-mode: vertical-rl;
-}
-
 
 /*オープン挨拶------------*/
 section {
