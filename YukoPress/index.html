@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>永田夕子 | ポートフォリオサイト</title>
-    <meta name="discription" content="永田夕子のポートフォリオサイトです。">
+    <title>YukoPress</title>
+    <meta name="discription" content="テーマを作り、ワードプレス化していきます">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Favicon-->
     <link rel="icon" href="favicon.png">
@@ -18,40 +18,34 @@
     <!--AOSanimation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--MyCss-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
-    <!--SwiperCss-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>      
+<body id="top">
 <!-- ヘッダー -->
 <header class="header">
     <div class="header__container">
-        <h1 class="header__title">Yuko Nagata</h1>
-        <p class="header__subtitle">Portfolio Site</p>
+        <img src="img/bg_header_t.png" alt="" class="header__cloud">
+        <h1 class="header__title">YukoPress</h1>
+        <p class="header__subtitle">オリジナルテーマを作ってWordPress化するぞサイト</p>
+        <img src="img/wave_profile_y.png" alt="" class="header__wave">
     </div><!--/.header__container-->
-<!-- ナビゲーション -->
-    <button id="gNaviBtn" class="header__gnavibtn">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <div class="header__gnavi gnavi">
-        <ul id="gNavi" class="gnavi__list">
-            <li class="gnavi__item"><a href="#profile">Profile</a></li>
-            <li class="gnavi__item"><a href="#favorite">Favorite</a></li>
-            <li class="gnavi__item"><a href="#skill">Skill</a></li>
-            <li class="gnavi__item"><a href="#works">Works</a></li>
-            <li class="gnavi__item"><a href="#others">Others</a></li>
-            <li class="gnavi__item"><a href="#contact">Contact</a></li>
-        </ul>
-    </div><!--/.header__gnavi gnavi-->
 </header>
+<!-- ナビゲーション -->
+    <nav class="header__gnavi gnavi">
+
+        <ul class="gnavi__list flex">
+            <li class="gnavi__item current"><a href="index.html">Top</a></li>
+            <li class="gnavi__item"><a href="about.html">About Me</a></li>
+            <li class="gnavi__item"><a href="blog.html">Blog</a></li>
+            <li class="gnavi__item"><a href="stamp.html">Stamp</a></li>
+            <li class="gnavi__item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav><!--/.header__gnavi gnavi-->
 
 <!-- メイン -->
 <main class="main">
     <!-- Profile -->
-    <img src="img/wave_profile_y.png" alt="" class="profile__wave" data-aos="fade-up" data-aos-duration="1500">
     <div id="profile" class="profile">
         <section class="profile__main">
             <h2 class="profile__title" data-aos="fade-down" data-aos-duration="1500">Profile</h2>
@@ -63,7 +57,7 @@
                 <p class="profile__text">職業訓練校では基礎からWeb制作を学んでおり、デザインが自分の書いたコードで形になっていく所に魅力を感じています。「こんな事出来るかな」と調べて実装したり、上手くいかない時に修正して正解を見つける工程も、今は楽しくて仕方がありません。</p>
                 <p class="profile__text">Web業界は未経験ですが、周りの環境や自分の状況が変わっても努力次第で続けられる仕事だと感じ、日々学習を続けています。</p>
             </div>
-            <div class="profile__box flex">
+            <div class="profile__box">
                 <dl class="profile__career">
                     <dt>安田女子短期大学</dt>
                     <dd>保育科 卒業</dd>
@@ -78,9 +72,6 @@
                     <dt>お手紙雑貨 つばめゆうびん</dt>
                     <dd>7年：紙文具の販売（土日に自営で継続中）</dd>
                 </dl>
-                <div class="profile__imgcapbox">
-                    <img src="img/imgcaption.png" alt="訓練校の同期がヘアメイクして撮ってくれた写真です" class="profile__imgcap">
-                </div>
             </div>
         </section>
     </div><!--/.profile-->
@@ -278,41 +269,6 @@
         </section>
     </div><!--/.others-->
 
-    <!-- Contact -->
-    <div id="contact" class="contact">
-        <section class="contact__main" >
-            <h2 class="contact__title"data-aos="fade-down" data-aos-duration="1500">Contact</h2>
-            <!-- formrun -->
-            <form class="formrun contact__form form" action="https://form.run/api/v1/r/vwt774csawecfw28pjw1ij8c" method="post">
-                <div class="form__inner">
-                <label class="form__label" id="name">お名前 [必須]</label>
-                <input name="お名前" type="text" class="form__name" id="name" placeholder="例) 永田&emsp;太郎" data-formrun-required>
-                <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
-                </div><!--/.form__inner-->
-            
-                <div class="form__inner">
-                <label class="form__label" for="email">メールアドレス [必須]</label>
-                <input name="メールアドレス" type="text" placeholder="例）mail@example.com" class="form__email" id="email" data-formrun-type="email" data-formrun-required>
-                <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
-                </div><!--/.form__inner-->
-            
-                <div class="form__inner">
-                <label class="form__label" for="message">お問い合わせ [必須]</label>
-                <textarea name="お問い合わせ" placeholder="お気軽にお問い合わせください" class="form__message" id="message" data-formrun-required></textarea>
-                <div data-formrun-show-if-error="お問い合わせ">内容を入力してください</div>
-                </div><!--/.form__inner-->
-                
-                <!-- ボット投稿をブロックするためのタグ -->
-                <div class="_formrun_gotcha">
-                <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
-                <label for="_formrun_gotcha">If you are a human, ignore this field</label>
-                <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
-                </div>
-            
-                <button type="submit" class="form__btn" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信する</button>
-            </form><!-- formrunここまで -->
-        </section>
-    </div><!--/.contact-->
 </main>
 
     <!-- footer -->
