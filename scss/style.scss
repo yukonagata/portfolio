@@ -348,15 +348,6 @@ section {
         }
 
         &--2 {
-            padding-top: 20px;
-            width: 100%;
-
-            @include pc {
-                width: 85%;
-            }
-        }
-
-        &--3 {
             padding-top: 15px;
             width: 100%;
 
@@ -365,7 +356,25 @@ section {
             }
         }
 
+        &--3 {
+            padding-top: 18px;
+            width: 100%;
+
+            @include pc {
+                width: 90%;
+            }
+        }
+
         &--4 {
+            padding-top: 20px;
+            width: 100%;
+
+            @include pc {
+                width: 85%;
+            }
+        }
+
+        &--5 {
             padding-top: 20px;
             width: 80%;
 
@@ -373,7 +382,6 @@ section {
                 width: 65%;
             }
         }
-
 
     }
 }
