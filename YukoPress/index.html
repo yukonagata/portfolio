@@ -24,11 +24,11 @@
 <body id="top">
 <!-- ヘッダー -->
 <header class="header">
-    <a href="index.html"><h1 class="header__h1">YukoPress</h1></a>
+    <a href="index.html"><p class="header__h1">YukoPress</p></a>
     <div class="header__container">
         <img src="img/bg_header_t.png" alt="" class="header__cloud">
         <h1 class="header__title">YukoPress</h1>
-        <p class="header__subtitle">オリジナルテーマを作ってWordPress化したい</p>
+        <p class="header__subtitle">WordPress実装の練習用ページ</p>
     </div><!--/.header__container-->
 </header>
 
@@ -47,14 +47,32 @@
 
 <!-- メイン -->
 <main class="main">
-    <!-- Profile -->
-    <div id="profile" class="profile">
-        <section class="profile__main">
-        </section>
-    </div><!--/.profile-->
+<div class="main__container">
+    <section class="main__section intro">
+        <h2 class="intro__title">h2タイトル</h2>
+        <p class="intro__text">yukoのWordPress練習用ブログサイトです。
+            <br>まずは静的サイトを作って、ワードプレス化していく予定です。
+            <br>Local by FlywheelとVS Codeで作成します。</p>
+    </section>
 
-
-
+    <section class="main__section new">
+        <h2 class="new__title">最新の記事一覧</h2>
+        <ul class="new__list">
+            <li class="new__item">
+                <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
+            </li>
+            <li class="new__item">
+                <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
+            </li>
+            <li class="new__item">
+                <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
+            </li>
+            <li class="new__item">
+                <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
+            </li>
+        </ul>
+    </section>
+</div>
 </main>
 
     <!-- footer -->
@@ -68,6 +86,8 @@
         <a class="topbtn__link" href="#top"><p>▲</p>
         <img src="img/topbtn__icon.png" alt="topページに戻る浮き輪アイコン" class="topbtn__icon"></a>
     </div><!--/.topbtn-->
+
+
     <!--SwiperJavaScript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
