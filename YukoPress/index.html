@@ -24,50 +24,51 @@
 <body id="top">
 <!-- ヘッダー -->
 <header class="header">
-    <a href="index.html"><p class="header__h1">YukoPress</p></a>
+    <a href="index.html"><p class="header__logo">YukoPress</p></a>
     <div class="header__container">
         <img src="img/bg_header_t.png" alt="" class="header__cloud">
         <h1 class="header__title">YukoPress</h1>
-        <p class="header__subtitle">WordPress実装の練習用ページ</p>
+        <p class="header__text">WordPress実装の練習用ページ</p>
     </div><!--/.header__container-->
 </header>
 
-
-<img src="img/wave_profile_y.png" alt="" class="header__wave">
-<!-- ナビゲーション -->
-    <nav class="header__gnavi gnavi">
-        <ul class="gnavi__list flex">
-            <li class="gnavi__item current"><a href="index.html">Top</a></li>
-            <li class="gnavi__item"><a href="about.html">About Me</a></li>
-            <li class="gnavi__item"><a href="blog.html">Blog</a></li>
-            <li class="gnavi__item"><a href="stamp.html">Stamp</a></li>
-            <li class="gnavi__item"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav><!--/.header__gnavi gnavi-->
-
+<img src="img/wave_profile_y.png" alt="" class="wave">
+<!-- グローバルナビ -->
+<nav class="gnavi">
+    <ul class="gnavi__list flex">
+        <li class="gnavi__item current"><a href="index.html">Top</a></li>
+        <li class="gnavi__item"><a href="profile.html">Profile</a></li>
+        <li class="gnavi__item"><a href="blog.html">Blog</a></li>
+        <li class="gnavi__item"><a href="stamp.html">Stamp</a></li>
+        <li class="gnavi__item"><a href="contact.html">Contact</a></li>
+    </ul>
+</nav><!--/.gnavi-->
+    
 <!-- メイン -->
 <main class="main">
 <div class="main__container">
-    <section class="main__section intro">
-        <h2 class="intro__title">h2タイトル</h2>
+    <!-- インロトダクション -->
+    <div class="main__section intro">
         <p class="intro__text">yukoのWordPress練習用ブログサイトです。
             <br>まずは静的サイトを作って、ワードプレス化していく予定です。
+            <br>（…カスタム投稿も、やるぞ…）</p>
+        <p class="intro__text">「標準デザイン講座」のテキストと、授業で習ったことをベースに、
             <br>Local by FlywheelとVS Codeで作成します。</p>
-    </section>
-
+        </div>
+    <!-- 最新記事 -->
     <section class="main__section new">
-        <h2 class="new__title">最新の記事一覧</h2>
+        <h3 class="new__title">最新の記事一覧</h3>
         <ul class="new__list">
-            <li class="new__item">
+            <li class="new__item flex">
                 <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
             </li>
-            <li class="new__item">
+            <li class="new__item flex">
                 <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
             </li>
-            <li class="new__item">
+            <li class="new__item flex">
                 <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
             </li>
-            <li class="new__item">
+            <li class="new__item flex">
                 <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
             </li>
         </ul>

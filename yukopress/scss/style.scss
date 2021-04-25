@@ -5,9 +5,10 @@ $color-bg: #fafafa;
 $color-wblue: #78c2d3;
 $color-pink: #ffebeb;
 $color-blue: #305c91;
-$tab: 1069px; // タブレット
-$sp: 480px; // スマホ
 
+// メディアクエリ
+$tab: 1069px;
+$sp: 480px;
 @mixin tab {
   @media (max-width: ($tab)) {
     @content;
@@ -29,10 +30,9 @@ html {
 }
 
 body {
-  background-color: #fafafa;
+  background-color: $color-bg;
   color: #333;
   font-family: 'Noto Sans JP','メイリオ', sans-serif;
-  position: relative;
 }
 
 a {
@@ -49,10 +49,6 @@ img {
   object-fit: cover;
 }
 
-.flex {
-  display: flex;
-}
-
 h1 {
   font-size: 32px;
   font-family: 'Ubuntu';
@@ -60,7 +56,7 @@ h1 {
 
 h2 {
   margin: 0 auto;
-  padding-top: 110px;
+  padding-top: 20vh;
   width: 100%;
   display: block;
   text-align: center;
@@ -72,6 +68,8 @@ h2 {
 }
 
 h3 {
+  text-align: center;
+  margin-bottom: 1em;
   padding-bottom: 5px;
   border-bottom: 1px dotted #333;
   font-size: 24px;
@@ -79,30 +77,41 @@ h3 {
   display: inline-block;
 }
 
+p {
+  line-height: 1.7em;
+}
 
-/* ヘッダー */
+section {
+  margin: 50px auto;
+  padding: 50px 5%;
+  max-width: 1000px;
+  text-align: center;
+  border: 5px dotted $color-wblue;
+}
+
+.flex {
+  display: flex;
+}
+
+/* ヘッダー
+------------------------------------------------------------*/
 
 .header {
   min-height: 23vh;
 
-  &__logo {
-    width: 50px;
-    height: auto;
-  }
-
-  &__h1 {
+  &__logo {//左上のタイトルロゴ
     padding-top: 2px;
+    padding-bottom: .2em;
+    height: 55px;
+    color: $color-wblue;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.7em;
     position: fixed;
     top: 0;
     left: 20px;
     z-index: 20;
-    height: 55px;
-    font-size: 32px;
-    line-height: 1.7em;
-    font-weight: 300;
-    font-family: 'Ubuntu';
-    color: #78c2d3;
-    padding-bottom: .2em;
   }
 
   &__cloud {
@@ -116,12 +125,18 @@ h3 {
     z-index: -1;
   }
 
-  &__subtitle {
+  &__title {
+    font-size: 64px;
+    font-weight: 300;
+  }
+
+  &__text {
     padding-top: 2em;
     font-size: 24px;
   }
-  
-  &__wave {
+}
+
+.wave {
     margin-bottom: -10px;
     padding-top: 20px;
     width: 100%;
@@ -137,35 +152,10 @@ h3 {
               transform: translateY(-5px);
     }
   }
-}
 
-
-
-/* トップページ----------------------------------*/
-
-#top .header {
-  min-height: 63vh;
-
-  &__title {
-    font-size: 64px;
-    font-weight: 300;
-    text-align: center;
-  }
-}
-
-
-#top .gnavi {
-  height: 60px;
-  margin: -5px 0 -55px;
-  padding-top: 3px;
-  text-align: center;
-  position: sticky;
-  top: -2px;
-  z-index: 10;
-  background-color: rgba(250, 250, 250, 0.9);
-}
 
 .gnavi {
+  padding-top: 3px;
   width: 100%;
   height: 60px;
   text-align: center;
@@ -190,35 +180,157 @@ h3 {
 
 .gnavi__item a:hover,
 .current a {
-  background: linear-gradient(transparent 60%, #ffebeb 60%);
+  background: linear-gradient(transparent 60%, $color-pink 60%);
   padding-bottom: .2em;
   cursor: pointer;
 }
 
-.fafafa {
-  background-color: #fafafa;
-}
-
-
-/* プロフィール----------------------------------*/
 .main {
 
   &__container{
     margin: -5px 0;
-    background-color: #ffebeb;
-    padding: 100px;
+    background-color: $color-bg;
+    padding: 100px 5% 10px;
   }
 }
 
 
-/* お問い合わせ----------------------------------*/
+
+/* index-トップページ-
+------------------------------------------------------------*/
+#top .header {
+  min-height: 63vh;
+}
+
+#top .gnavi {
+  margin: -5px 0 -55px;
+  position: sticky;
+}
+
+.intro {
+  margin: 50px auto;
+  padding: 50px 5%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.new {
+  &__item {
+    line-height: 1.7em;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+/* profile-プロフィール-
+------------------------------------------------------------*/
+.profile {
+
+  text-align: left;
+
+  &__inner {
+    padding-bottom: 30px;
+    align-items: center;
+    display: block;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__icon {
+    width: 80px;
+  }
+
+  &__list {
+    padding-left: 1em;
+    padding-bottom: 30px;
+  }
+
+  &__item::before {
+    content: "●";
+    padding-right: .5em;
+    color: $color-wblue;
+  }
+
+  &__text {
+    padding-left: 1em;
+
+    &:first-of-type {
+      padding-top: 1em;
+    }
+
+    &::before {
+      content: "●";
+      padding-right: .5em;
+      color: $color-wblue;
+    }
+  }
+
+}
+
+.skill{
+  align-items: flex-start;
+
+  &__icon {
+    padding: 10px;
+    text-align: center;
+    color: $color-blue;
+    display: inline-block;
+  }
+
+  &__gauge{
+    margin: 0 auto;    
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 7px solid $color-blue;
+    line-height: 86px;
+    font-size: 32px;
+  
+    &--90 {
+        background-image: url(../img/90.png);
+    }
+
+    // &--70 {
+    //     background-image: url(../img/70.png);
+    // }
+
+    &--50 {
+        background-image: url(../img/50.png);
+    }
+
+    &--30 {
+        background-image: url(../img/30.png);
+    }
+  }
+
+  &__cap {
+    font-weight: bold;
+  }
+}
+
+
+
+/* Contact-お問い合わせ-
+------------------------------------------------------------*/
 .contact {
   margin: 0 auto;
   padding: 0;
   width: 90%;
   max-width: 936px;
-  background: #fafafa;
-  border: 5px solid #ffebeb;
+  background: $color-bg;
+  border: 5px solid $color-pink;
   border-radius: 10px;
   position: relative;
 }
@@ -228,7 +340,7 @@ h3 {
   margin: auto;
   width: 0px;
   height: 0px;
-  border-top: 100px solid #ffebeb;
+  border-top: 100px solid $color-pink;
   border-right: 30vw solid transparent;
   border-bottom: 0 solid transparent;
   border-left: 30vw solid transparent;
@@ -238,22 +350,18 @@ h3 {
   right: 0;
 }
 
-.contact__title {
-  padding-top: 20vh;
-}
-
 .contact__subtitle {
-  padding: 50px 1%;
-  font-size: 18px;
   margin: 0 auto;
+  padding: 50px 1%;
   width: 90%;
   max-width: 936px;
+  font-size: 18px;
 }
 
 .contact__subtitle::before {
   content: "●";
   padding-right: .3em;
-  color: #78c2d3;
+  color: $color-wblue;
 }
 
 .form {
@@ -286,18 +394,19 @@ h3 {
   width: 70%;
   background-color: #ffebeb;
   border-radius: 10px;
-  display: block;
   line-height: 3em;
+  display: block;
 }
 
-/* フッター----------------------------------*/
+/* フッター
+------------------------------------------------------------*/
 .footer {
   text-align: center;
-  background-color: #fafafa;
+  background-color: $color-bg;
 }
 
 .footer__wrapper {
-  padding: 300px 0 30px;
+  padding: 250px 0 30px;
   background-image: url(../img/bgwave_profile.gif);
   background-repeat: no-repeat;
   background-position: center bottom -5px;
@@ -308,6 +417,9 @@ h3 {
   font-size: 14px;
 }
 
+
+/* トップに戻るボタン
+------------------------------------------------------------*/
 .topbtn {
   text-align: center;
   position: fixed;

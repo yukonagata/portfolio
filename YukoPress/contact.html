@@ -21,85 +21,82 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="contact">  
+<body id="contact"> 
 
 <!-- 共通部分ここから -->
-<header class="header">
-    <a href="index.html">
-        <h1 class="header__h1">YukoPress</h1>
-    </a>
-    <div class="header__container">
-        <h2 class="contact__title">Contact</h2>
-    </div><!--/.header__container-->
-</header>
+    <header class="header">
+        <a href="index.html"><h1 class="header__logo">YukoPress</h1></a>
+        <div class="header__container">
+            <h2 class="header__pageTitle">Contact</h2>
+        </div><!--/.header__container-->
+    </header>
+    <!-- グローバルナビ -->
+    <nav class="gnavi">
+        <ul class="gnavi__list flex">
+            <li class="gnavi__item"><a href="index.html">Top</a></li>
+            <li class="gnavi__item"><a href="profile.html">Profile</a></li>
+            <li class="gnavi__item"><a href="blog.html">Blog</a></li>
+            <li class="gnavi__item"><a href="stamp.html">Stamp</a></li>
+            <li class="gnavi__item current"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav><!--/.gnavi-->
+    <img src="img/wave_profile_y.png" alt="" class="wave">
 <!-- 共通部分ここまで -->
 
-
-<!-- メインエリア -->
+<!-- メインエリアここから -->
 <main class="main">
-    <img src="img/wave_profile_y.png" alt="" class="header__wave">
-    <div class="fafafa">
-        <!-- ナビゲーション -->
-        <nav class="header__gnavi gnavi">
-            <ul class="gnavi__list flex">
-                <li class="gnavi__item"><a href="index.html">Top</a></li>
-                <li class="gnavi__item"><a href="about.html">About Me</a></li>
-                <li class="gnavi__item"><a href="blog.html">Blog</a></li>
-                <li class="gnavi__item"><a href="stamp.html">Stamp</a></li>
-                <li class="gnavi__item current"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav><!--/.header__gnavi gnavi-->
-    
-    <!-- Contact -->
-    <p class="contact__subtitle">お問い合わせはこちらからお願いいたします。</p>
-        <section class="contact">
-            <!-- formrun -->
-            <form class="formrun contact__form form" action="https://form.run/api/v1/r/vwt774csawecfw28pjw1ij8c" method="post">
-                <div class="form__inner">
-                <label class="form__label" id="name">お名前 [必須]</label>
-                <input name="お名前" type="text" class="form__name" id="name" placeholder="例) ゆうこ" data-formrun-required>
-                <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
-                </div><!--/.form__inner-->
+<div class="main__container">
+
+<!-- コンタクトフォーム -->
+<p class="contact__subtitle">お問い合わせはこちらからお願いいたします。</p>
+    <div class="main__box contact">
+        <!-- formrun -->
+        <form class="formrun contact__form form" action="https://form.run/api/v1/r/vwt774csawecfw28pjw1ij8c" method="post">
+            <div class="form__inner">
+            <label class="form__label" id="name">お名前 [必須]</label>
+            <input name="お名前" type="text" class="form__name" id="name" placeholder="例) ゆうこ" data-formrun-required>
+            <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
+            </div><!--/.form__inner-->
+            <div class="form__inner">
+            <label class="form__label" for="email">メールアドレス [必須]</label>
+            <input name="メールアドレス" type="text" placeholder="例）mail@example.com" class="form__email" id="email" data-formrun-type="email" data-formrun-required>
+            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+            </div><!--/.form__inner-->
+            <div class="form__inner">
+            <label class="form__label" for="message">お問い合わせ [必須]</label>
+            <textarea name="お問い合わせ" placeholder="お気軽にお問い合わせください" class="form__message" id="message" data-formrun-required></textarea>
+            <div data-formrun-show-if-error="お問い合わせ">内容を入力してください</div>
+            </div><!--/.form__inner-->
             
-                <div class="form__inner">
-                <label class="form__label" for="email">メールアドレス [必須]</label>
-                <input name="メールアドレス" type="text" placeholder="例）mail@example.com" class="form__email" id="email" data-formrun-type="email" data-formrun-required>
-                <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
-                </div><!--/.form__inner-->
-            
-                <div class="form__inner">
-                <label class="form__label" for="message">お問い合わせ [必須]</label>
-                <textarea name="お問い合わせ" placeholder="お気軽にお問い合わせください" class="form__message" id="message" data-formrun-required></textarea>
-                <div data-formrun-show-if-error="お問い合わせ">内容を入力してください</div>
-                </div><!--/.form__inner-->
-                
-                <!-- ボット投稿をブロックするためのタグ -->
-                <div class="_formrun_gotcha">
-                <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
-                <label for="_formrun_gotcha">If you are a human, ignore this field</label>
-                <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
-                </div>
-            
-                <button type="submit" class="form__btn" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信する</button>
-            </form><!-- formrunここまで -->
-        </section>
-    </div>
+            <!-- ボット投稿ブロック -->
+            <div class="_formrun_gotcha">
+            <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+            <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+            <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+            </div>
+        
+            <button type="submit" class="form__btn" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信する</button>
+        </form><!-- formrunここまで -->
+    </div><!--/.contact-->
+
+</div>
 </main>
 <!-- メインエリアここまで -->
 
-    <!-- footer -->
-    <footer class="footer">
-        <div class="footer__wrapper">
-        <small class="footer__copyright">&copy;2021 Yuko Nagata</small>
-        </div>
-    </footer>
-    <!-- topBtn -->
-    <div id="topBtn" class="topbtn">
-        <a class="topbtn__link" href="#top"><p>▲</p>
-        <img src="img/topbtn__icon.png" alt="topページに戻る浮き輪アイコン" class="topbtn__icon"></a>
-    </div><!--/.topbtn-->
-    <!--AOSanimation-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- フッターここから -->
+<footer class="footer">
+    <div class="footer__wrapper">
+    <small class="footer__copyright">&copy;2021 Yuko Nagata</small>
+    </div><!--/.footer__wrapper-->
+</footer>
+<!-- フッターここまで -->
+
+<!-- トップに戻るボタン -->
+<div id="topBtn" class="topbtn">
+    <a class="topbtn__link" href="#top"><p>▲</p>
+    <img src="img/topbtn__icon.png" alt="topページに戻る浮き輪アイコン" class="topbtn__icon"></a>
+</div><!--/.topbtn-->
+
     <!--MyJavaScript-->
     <script src="js/script.js"></script>
     <!--formrunJavaScript-->
