@@ -38,29 +38,3 @@ gNavi.onclick = (e) => {
 //------------------ハンバーガーメニューここまで--------------
 
 
-//------------------好きなことSwiper-------------------------
-    var swiper = new Swiper('.swiper-container', {
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true,
-        renderBullet: function (index, className) {
-            //中に数字を表示
-            return '<span class="' + className + '">' + (index + 1) + '</span>';
-        }
-        },
-    
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      effect: "fade",
-      fadeEffect: {
-        crossFade: true // クロスフェードさせる
-      },
-    }); 
-//------------------好きなことSwiperここまで------------------
-
