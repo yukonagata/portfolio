@@ -258,13 +258,13 @@ section {
   font-size: 32px;
 }
 .skill__gauge--90 {
-  background-image: url(../img/90.png);
+  background-image: url(../img/g-90.png);
 }
 .skill__gauge--50 {
-  background-image: url(../img/50.png);
+  background-image: url(../img/g-50.png);
 }
 .skill__gauge--30 {
-  background-image: url(../img/30.png);
+  background-image: url(../img/g-30.png);
 }
 .skill__cap {
   font-weight: bold;
@@ -355,7 +355,7 @@ section {
 
 .footer__wrapper {
   padding: 250px 0 30px;
-  background-image: url(../img/bgwave_profile.gif);
+  background-image: url(../img/bgwave-profile.gif);
   background-repeat: no-repeat;
   background-position: center bottom -5px;
   background-size: 100%;
