@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>YukoPress</title>
+    <meta name="discription" content="テーマを作り、ワードプレス化していきます">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon-->
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <!--noindex-->
+    <meta name="robots" content="noindex, nofollow">
+    <!--ResetCss-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!--GoogleFont-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!--AOSanimation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--MyCss-->
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body id="top">
+<!-- ヘッダー -->
+<header class="header">
+    <a href="front-page.html"><p class="header__logo">YukoPress</p></a>
+    <div class="header__container">
+        <img src="img/bg-header-t.png" alt="" class="header__cloud">
+        <h1 class="header__title">YukoPress</h1>
+        <p class="header__text">WordPress実装の練習用ページ</p>
+    </div><!--/.header__container-->
+</header>
+
+<img src="img/wave-profile-y.png" alt="" class="wave">
+<!-- グローバルナビ -->
+<nav class="gnavi">
+    <ul class="gnavi__list flex">
+        <li class="gnavi__item current"><a href="front-page.html">Top</a></li>
+        <li class="gnavi__item"><a href="profile.html">Profile</a></li>
+        <li class="gnavi__item"><a href="home.html">Blog</a></li>
+        <li class="gnavi__item"><a href="stamp.html">Stamp</a></li>
+        <li class="gnavi__item"><a href="info.html">Contact</a></li>
+    </ul>
+</nav><!--/.gnavi-->
+
+<!-- メイン -->
+<main class="main">
+<div class="main__container">
+    <!-- インロトダクション -->
+    <div class="main__section intro">
+        <p class="intro__text">yukoのWordPress練習用ブログサイトです。
+            <br>まずは静的サイトを作って、ワードプレス化していく予定です。
+            <br>（…カスタム投稿も、やるぞ…）</p>
+        <p class="intro__text">「標準デザイン講座」のテキストと、授業で習ったことをベースに、
+            <br>Local by FlywheelとVS Codeで作成します。</p>
+        </div>
+    <!-- 最新記事 -->
+    <section class="main__section new">
+        <h3 class="new__title">最新の記事一覧</h3>
+        <ul class="new__list">
+            <li class="new__item flex">
+                <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
+            </li>
+            <li class="new__item flex">
+                <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
+            </li>
+            <li class="new__item flex">
+                <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
+            </li>
+            <li class="new__item flex">
+                <a class="new__link" href="#">投稿記事タイトル</a><time class="new__time">2021年4月20日</time>
+            </li>
+        </ul>
+    </section>
+</div>
+</main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__wrapper">
+        <small class="footer__copyright">&copy;2021 Yuko Nagata</small>
+        </div>
+    </footer>
+    <!-- topBtn -->
+    <div id="topBtn" class="topbtn">
+        <a class="topbtn__link" href="#top"><p>▲</p>
+        <img src="img/topbtn__icon.png" alt="topページに戻る浮き輪アイコン" class="topbtn__icon"></a>
+    </div><!--/.topbtn-->
+
+
+    <!--SwiperJavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <!--AOSanimation-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--MyJavaScript-->
+    <script src="js/script.js"></script>
+    <!--formrunJavaScript-->
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+</body>
+</html>
