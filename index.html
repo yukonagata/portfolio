@@ -301,7 +301,7 @@
         <section class="contact__main" >
             <h2 class="contact__title"data-aos="fade-down" data-aos-duration="1500">Contact</h2>
             <!-- formrun -->
-            <form class="formrun contact__form form" action="https://form.run/api/v1/r/vwt774csawecfw28pjw1ij8c" method="post">
+            <form class="formrun contact__form form" action="https://form.run/api/v1/r/vwt774csawecfw28pjw1ij8c" method="post" data-formrun-confirm="true">
                 <div class="form__inner">
                 <label class="form__label" id="name">お名前 [必須]</label>
                 <input name="お名前" type="text" class="form__name" id="name" placeholder="例) 永田&emsp;太郎" data-formrun-required>
@@ -327,7 +327,8 @@
                 <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
                 </div>
             
-                <button type="submit" class="form__btn" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信する</button>
+                <a href="javascript:void(0)" class="btn btn-default" data-formrun-back-button>戻る</a>
+                <button type="submit" class="btn btn-primary">確認</button>
             </form><!-- formrunここまで -->
         </section>
     </div><!--/.contact-->
