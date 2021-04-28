@@ -71,7 +71,7 @@ h2 {
 
 h3 {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 32px;
   padding-bottom: 5px;
   border-bottom: 1px dotted #333;
   font-size: 24px;
@@ -238,7 +238,7 @@ main > section {
   text-align: left;
 
   &__inner {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     align-items: center;
     display: block;
 
@@ -253,7 +253,7 @@ main > section {
 
   &__list {
     padding-left: 1em;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 
   &__item::before {
@@ -316,10 +316,16 @@ main > section {
 }
 
 
-/* Blog-投稿記事一覧-
+/* Blog-ブログ-
 ------------------------------------------------------------*/
 
-#blog {
+// 投稿一覧・個別投稿共通
+#blog,
+#single {
+
+  section {
+    margin-top: 0;
+  }
 
   .container {
     justify-content: space-between;
@@ -330,12 +336,25 @@ main > section {
   }
 }
 
+.side {
+  width: 20%;
+
+  &__box:not(:first-of-type) {
+      padding-top: 30px;
+  }
+
+}
+
+// 投稿一覧ページ
 .blog {
-  margin-top: 0;
-  text-align: left;
+
+  &__wrapper {
+    padding-bottom: 32px;
+  }
 
   &__inner {
     padding-left: 24px;
+    text-align: left;
   }
 
   &__textTitle {
@@ -358,14 +377,19 @@ main > section {
   }
 }
 
-#blog .side {
-  width: 20%;
+// 個別投稿ページ
+.single {
 
-  &__box:not(:first-of-type) {
-      padding-top: 30px;
+  &__wrapper {
+    text-align: left;
+  }
+
+  &__img {
+    padding: 16px 0 32px;
   }
 
 }
+
 
 /* Contact-お問い合わせ-
 ------------------------------------------------------------*/

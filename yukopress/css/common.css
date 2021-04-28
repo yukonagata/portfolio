@@ -50,7 +50,7 @@ h2 {
 
 h3 {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 32px;
   padding-bottom: 5px;
   border-bottom: 1px dotted #333;
   font-size: 24px;
@@ -206,7 +206,7 @@ main > section {
   text-align: left;
 }
 .profile__inner {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   align-items: center;
   display: block;
 }
@@ -218,7 +218,7 @@ main > section {
 }
 .profile__list {
   padding-left: 1em;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .profile__item::before {
   content: "●";
@@ -271,21 +271,34 @@ main > section {
   font-weight: bold;
 }
 
-/* Blog-投稿記事一覧-
+/* Blog-ブログ-
 ------------------------------------------------------------*/
-#blog .container {
+#blog section,
+#single section {
+  margin-top: 0;
+}
+#blog .container,
+#single .container {
   justify-content: space-between;
 }
-#blog .main {
+#blog .main,
+#single .main {
   width: 77%;
 }
 
-.blog {
-  margin-top: 0;
-  text-align: left;
+.side {
+  width: 20%;
+}
+.side__box:not(:first-of-type) {
+  padding-top: 30px;
+}
+
+.blog__wrapper {
+  padding-bottom: 32px;
 }
 .blog__inner {
   padding-left: 24px;
+  text-align: left;
 }
 .blog__textTitle {
   font-size: 24px;
@@ -303,11 +316,11 @@ main > section {
   text-decoration: underline;
 }
 
-#blog .side {
-  width: 20%;
+.single__wrapper {
+  text-align: left;
 }
-#blog .side__box:not(:first-of-type) {
-  padding-top: 30px;
+.single__img {
+  padding: 16px 0 32px;
 }
 
 /* Contact-お問い合わせ-
