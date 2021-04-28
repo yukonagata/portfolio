@@ -177,7 +177,6 @@ main > section {
 #top .header {
   min-height: 63vh;
 }
-
 #top .gnavi {
   margin: -5px 0 -55px;
   position: sticky;
@@ -274,27 +273,23 @@ main > section {
 
 /* Blog-投稿記事一覧-
 ------------------------------------------------------------*/
-#blog section {
-  margin-top: 0;
-}
-
 #blog .container {
   justify-content: space-between;
 }
-
 #blog .main {
-  width: 70%;
+  width: 77%;
 }
 
 .blog {
+  margin-top: 0;
   text-align: left;
 }
-.blog__wrapper {
+.blog__inner {
   padding-left: 24px;
 }
 .blog__textTitle {
   font-size: 24px;
-  padding-bottom: 10px;
+  padding: 5px 0 10px;
 }
 .blog__img {
   width: 30%;
@@ -309,7 +304,7 @@ main > section {
 }
 
 #blog .side {
-  width: 26%;
+  width: 20%;
 }
 #blog .side__box:not(:first-of-type) {
   padding-top: 30px;

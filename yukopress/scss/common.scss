@@ -197,14 +197,17 @@ main > section {
 
 /* index-トップページ-
 ------------------------------------------------------------*/
-#top .header {
-  min-height: 63vh;
-}
+#top {
 
-#top .gnavi {
-  margin: -5px 0 -55px;
-  position: sticky;
-}
+  .header {
+    min-height: 63vh;
+  }
+
+  .gnavi {
+    margin: -5px 0 -55px;
+    position: sticky;
+  }
+} 
 
 .intro {
   margin: 50px auto;
@@ -316,28 +319,28 @@ main > section {
 /* Blog-投稿記事一覧-
 ------------------------------------------------------------*/
 
-#blog section {
-  margin-top: 0;
-}
+#blog {
 
-#blog .container {
-  justify-content: space-between;
-}
+  .container {
+    justify-content: space-between;
+  }
 
-#blog .main {
-  width: 70%;
+  .main {
+    width: 77%;
+  }
 }
 
 .blog {
+  margin-top: 0;
   text-align: left;
 
-  &__wrapper {
+  &__inner {
     padding-left: 24px;
   }
 
   &__textTitle {
     font-size: 24px;
-    padding-bottom: 10px;
+    padding: 5px 0 10px;
   }
 
   &__img {
@@ -348,6 +351,7 @@ main > section {
   &__more {
     display: block;
     text-align: right;
+
     &:hover {
       text-decoration: underline;
     }
@@ -355,7 +359,7 @@ main > section {
 }
 
 #blog .side {
-  width: 26%;
+  width: 20%;
 
   &__box:not(:first-of-type) {
       padding-top: 30px;
