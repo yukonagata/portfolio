@@ -21,6 +21,8 @@ $sp: 480px;
 }
 
 
+/* 全ページ共通
+------------------------------------------------------------*/
 * {
   box-sizing: border-box;
 }
@@ -81,7 +83,7 @@ p {
   line-height: 1.7em;
 }
 
-section {
+main > section {
   margin: 50px auto;
   padding: 50px 5%;
   max-width: 1000px;
@@ -93,9 +95,9 @@ section {
   display: flex;
 }
 
+
 /* ヘッダー
 ------------------------------------------------------------*/
-
 .header {
   min-height: 23vh;
 
@@ -186,9 +188,9 @@ section {
 }
 
 .container{
-    margin: -5px 0;
-    background-color: $color-bg;
-    padding: 100px 5% 10px;
+  margin: -5px 0;
+  background-color: $color-bg;
+  padding: 100px 5% 10px;
 }
 
 
@@ -225,6 +227,7 @@ section {
     }
   }
 }
+
 
 /* profile-プロフィール-
 ------------------------------------------------------------*/
@@ -268,9 +271,7 @@ section {
       padding-right: .5em;
       color: $color-wblue;
     }
-
   }
-
 }
 
 .skill{
@@ -298,15 +299,9 @@ section {
     &--90 {
         background-image: url(../img/g-90.png);
     }
-
-    // &--70 {
-    //     background-image: url(../img/g-70.png);
-    // }
-
     &--50 {
         background-image: url(../img/g-50.png);
     }
-
     &--30 {
         background-image: url(../img/g-30.png);
     }
@@ -316,8 +311,11 @@ section {
     font-weight: bold;
   }
 }
-/* Contact-お問い合わせ-
+
+
+/* Blog-投稿記事一覧-
 ------------------------------------------------------------*/
+
 #blog section {
   margin-top: 0;
 }
@@ -330,8 +328,39 @@ section {
   width: 70%;
 }
 
+.blog {
+  text-align: left;
+
+  &__wrapper {
+    padding-left: 24px;
+  }
+
+  &__textTitle {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+
+  &__img {
+    width: 30%;
+    height: auto;
+  }
+
+  &__more {
+    display: block;
+    text-align: right;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 #blog .side {
   width: 26%;
+
+  &__box:not(:first-of-type) {
+      padding-top: 30px;
+  }
+
 }
 
 /* Contact-お問い合わせ-
@@ -387,7 +416,9 @@ section {
   padding: 1em 0;
 }
 
-.form__name, .form__email, .form__message {
+.form__name,
+.form__email,
+.form__message {
   margin-top: 0.5em;
   margin-left: auto;
   padding: .5em 1em;
@@ -409,6 +440,7 @@ section {
   line-height: 3em;
   display: block;
 }
+
 
 /* フッター
 ------------------------------------------------------------*/
