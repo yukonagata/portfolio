@@ -220,6 +220,9 @@ main > section {
   padding-left: 1em;
   padding-bottom: 50px;
 }
+.profile__item {
+  line-height: 1.7em;
+}
 .profile__item::before {
   content: "●";
   padding-right: 0.5em;

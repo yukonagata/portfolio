@@ -256,12 +256,14 @@ main > section {
     padding-bottom: 50px;
   }
 
-  &__item::before {
-    content: "●";
-    padding-right: .5em;
-    color: $color-wblue;
+  &__item {
+    line-height: 1.7em;
+      &::before {
+      content: "●";
+      padding-right: .5em;
+      color: $color-wblue;
+    }
   }
-
   &__text {
     padding-left: 1em;
 
