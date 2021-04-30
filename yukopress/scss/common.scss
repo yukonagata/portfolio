@@ -35,7 +35,6 @@ body {
   background-color: $color-bg;
   color: #333;
   font-family: 'Noto Sans JP','メイリオ', sans-serif;
-  font-size: 18px;
 }
 
 a {
@@ -192,24 +191,21 @@ main > section {
   margin: -5px 0;
   background-color: $color-bg;
   padding: 100px 5% 10px;
-
-  &--blog {
-    justify-content: space-between;
-  }
 }
+
 
 
 /* index-トップページ-
 ------------------------------------------------------------*/
-.home {
+#top {
 
   .header {
     min-height: 63vh;
   }
 
   .gnavi {
-      margin: -5px 0 -55px;
-      position: sticky;
+    margin: -5px 0 -55px;
+    position: sticky;
   }
 } 
 
@@ -221,27 +217,20 @@ main > section {
 }
 
 .new {
+  &__item {
+    line-height: 1.7em;
+    justify-content: space-between;
+  }
 
-  &__list {
+  &__link {
+    text-decoration: underline;
 
-    li {
-      display: flex;
-      justify-content: space-between;
-
-    a {
-        text-decoration: underline;
-
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-
-    time {
-      font-size: 18px;
+    &:hover {
+      text-decoration: none;
     }
   }
 }
+
 
 /* profile-プロフィール-
 ------------------------------------------------------------*/
@@ -251,11 +240,15 @@ main > section {
   &__inner {
     padding-bottom: 50px;
     align-items: center;
+    display: block;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   &__icon {
     width: 80px;
-    height: auto;
   }
 
   &__list {
@@ -265,18 +258,14 @@ main > section {
 
   &__item {
     line-height: 1.7em;
-    display: block;
       &::before {
       content: "●";
       padding-right: .5em;
       color: $color-wblue;
     }
   }
-  
   &__text {
-    width: 100%;
     padding-left: 1em;
-    display: block;
 
     &:first-of-type {
       padding-top: 1em;
@@ -333,12 +322,19 @@ main > section {
 ------------------------------------------------------------*/
 
 // 投稿一覧・個別投稿共通
-#post,
+#blog,
 #single {
-  width: 77%;
 
   section {
     margin-top: 0;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .main {
+    width: 77%;
   }
 }
 
@@ -352,14 +348,16 @@ main > section {
 }
 
 // 投稿一覧ページ
-.post {
-  padding-left: 24px;
-  text-align: left;
+.blog {
 
   &__wrapper {
     padding-bottom: 32px;
   }
 
+  &__inner {
+    padding-left: 24px;
+    text-align: left;
+  }
 
   &__textTitle {
     font-size: 24px;
@@ -370,17 +368,16 @@ main > section {
     width: 30%;
     height: auto;
   }
-}
 
-.post-categories a {
-  margin: 2px;
-  padding: 2px 8px;
-  background-color: $color-blue;
-  border-radius: 5px;
-  color: $color-bg;
-  font-size: 14px;
-}
+  &__more {
+    display: block;
+    text-align: right;
 
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 
 // 個別投稿ページ
 .single {
@@ -484,7 +481,7 @@ main > section {
 
 .footer__bg {
   padding: 250px 0 20px;
-  background-image: url(../img/bgwave-footer.gif);
+  background-image: url(../img/bgwave-profile.gif);
   background-repeat: no-repeat;
   background-position: center bottom -5px;
   background-size: 100%;
