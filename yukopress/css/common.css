@@ -13,6 +13,7 @@ body {
   background-color: #fafafa;
   color: #333;
   font-family: "Noto Sans JP", "メイリオ", sans-serif;
+  font-size: 18px;
 }
 
 a {
@@ -171,13 +172,16 @@ main > section {
   background-color: #fafafa;
   padding: 100px 5% 10px;
 }
+.container--blog {
+  justify-content: space-between;
+}
 
 /* index-トップページ-
 ------------------------------------------------------------*/
-#top .header {
+.home .header {
   min-height: 63vh;
 }
-#top .gnavi {
+.home .gnavi {
   margin: -5px 0 -55px;
   position: sticky;
 }
@@ -189,15 +193,18 @@ main > section {
   text-align: center;
 }
 
-.new__item {
-  line-height: 1.7em;
+.new__list li {
+  display: flex;
   justify-content: space-between;
 }
-.new__link {
+.new__list li a {
   text-decoration: underline;
 }
-.new__link:hover {
+.new__list li a:hover {
   text-decoration: none;
+}
+.new__list time {
+  font-size: 18px;
 }
 
 /* profile-プロフィール-
@@ -208,13 +215,10 @@ main > section {
 .profile__inner {
   padding-bottom: 50px;
   align-items: center;
-  display: block;
-}
-.profile__inner:last-child {
-  padding-bottom: 0;
 }
 .profile__icon {
   width: 80px;
+  height: auto;
 }
 .profile__list {
   padding-left: 1em;
@@ -222,6 +226,7 @@ main > section {
 }
 .profile__item {
   line-height: 1.7em;
+  display: block;
 }
 .profile__item::before {
   content: "●";
@@ -229,7 +234,9 @@ main > section {
   color: #78c2d3;
 }
 .profile__text {
+  width: 100%;
   padding-left: 1em;
+  display: block;
 }
 .profile__text:first-of-type {
   padding-top: 1em;
@@ -276,17 +283,13 @@ main > section {
 
 /* Blog-ブログ-
 ------------------------------------------------------------*/
-#blog section,
+#post,
+#single {
+  width: 77%;
+}
+#post section,
 #single section {
   margin-top: 0;
-}
-#blog .container,
-#single .container {
-  justify-content: space-between;
-}
-#blog .main,
-#single .main {
-  width: 77%;
 }
 
 .side {
@@ -296,27 +299,29 @@ main > section {
   padding-top: 30px;
 }
 
-.blog__wrapper {
-  padding-bottom: 32px;
-}
-.blog__inner {
+.post {
   padding-left: 24px;
   text-align: left;
 }
-.blog__textTitle {
+.post__wrapper {
+  padding-bottom: 32px;
+}
+.post__textTitle {
   font-size: 24px;
   padding: 5px 0 10px;
 }
-.blog__img {
+.post__img {
   width: 30%;
   height: auto;
 }
-.blog__more {
-  display: block;
-  text-align: right;
-}
-.blog__more:hover {
-  text-decoration: underline;
+
+.post-categories a {
+  margin: 2px;
+  padding: 2px 8px;
+  background-color: #305c91;
+  border-radius: 5px;
+  color: #fafafa;
+  font-size: 14px;
 }
 
 .single__wrapper {
@@ -413,7 +418,7 @@ main > section {
 
 .footer__bg {
   padding: 250px 0 20px;
-  background-image: url(../img/bgwave-profile.gif);
+  background-image: url(../img/bgwave-footer.gif);
   background-repeat: no-repeat;
   background-position: center bottom -5px;
   background-size: 100%;

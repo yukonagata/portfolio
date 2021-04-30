@@ -18,23 +18,3 @@ window.onscroll = () => {
 };
 //------------------トップに戻るボタンここまで----------------
 
-
-
-//------------------ハンバーガーメニュー----------------------
-const gNaviBtn = document.getElementById('gNaviBtn');
-const gNavi = document.getElementById('gNavi');
-
-gNaviBtn.onclick = (e) => {
-    e.preventDefault;
-    gNaviBtn.classList.toggle('active');
-    gNavi.classList.toggle('active');
-};
-
-gNavi.onclick = (e) => {
-    e.preventDefault;
-    gNaviBtn.classList.remove('active');
-    gNavi.classList.remove('active');
-};
-//------------------ハンバーガーメニューここまで--------------
-
-
