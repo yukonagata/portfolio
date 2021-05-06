@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* 全ページ共通
+------------------------------------------------------------*/
 * {
   box-sizing: border-box;
 }
@@ -48,7 +50,7 @@ h2 {
 
 h3 {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 32px;
   padding-bottom: 5px;
   border-bottom: 1px dotted #333;
   font-size: 24px;
@@ -60,7 +62,7 @@ p {
   line-height: 1.7em;
 }
 
-section {
+main > section {
   margin: 50px auto;
   padding: 50px 5%;
   max-width: 1000px;
@@ -164,7 +166,7 @@ section {
   cursor: pointer;
 }
 
-.main__container {
+.container {
   margin: -5px 0;
   background-color: #fafafa;
   padding: 100px 5% 10px;
@@ -175,7 +177,6 @@ section {
 #top .header {
   min-height: 63vh;
 }
-
 #top .gnavi {
   margin: -5px 0 -55px;
   position: sticky;
@@ -205,7 +206,7 @@ section {
   text-align: left;
 }
 .profile__inner {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   align-items: center;
   display: block;
 }
@@ -217,7 +218,10 @@ section {
 }
 .profile__list {
   padding-left: 1em;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+}
+.profile__item {
+  line-height: 1.7em;
 }
 .profile__item::before {
   content: "●";
@@ -268,6 +272,58 @@ section {
 }
 .skill__cap {
   font-weight: bold;
+}
+
+/* Blog-ブログ-
+------------------------------------------------------------*/
+#blog section,
+#single section {
+  margin-top: 0;
+}
+#blog .container,
+#single .container {
+  justify-content: space-between;
+}
+#blog .main,
+#single .main {
+  width: 77%;
+}
+
+.side {
+  width: 20%;
+}
+.side__box:not(:first-of-type) {
+  padding-top: 30px;
+}
+
+.blog__wrapper {
+  padding-bottom: 32px;
+}
+.blog__inner {
+  padding-left: 24px;
+  text-align: left;
+}
+.blog__textTitle {
+  font-size: 24px;
+  padding: 5px 0 10px;
+}
+.blog__img {
+  width: 30%;
+  height: auto;
+}
+.blog__more {
+  display: block;
+  text-align: right;
+}
+.blog__more:hover {
+  text-decoration: underline;
+}
+
+.single__wrapper {
+  text-align: left;
+}
+.single__img {
+  padding: 16px 0 32px;
 }
 
 /* Contact-お問い合わせ-
@@ -323,7 +379,9 @@ section {
   padding: 1em 0;
 }
 
-.form__name, .form__email, .form__message {
+.form__name,
+.form__email,
+.form__message {
   margin-top: 0.5em;
   margin-left: auto;
   padding: 0.5em 1em;
@@ -353,8 +411,8 @@ section {
   background-color: #fafafa;
 }
 
-.footer__wrapper {
-  padding: 250px 0 30px;
+.footer__bg {
+  padding: 250px 0 20px;
   background-image: url(../img/bgwave-profile.gif);
   background-repeat: no-repeat;
   background-position: center bottom -5px;
