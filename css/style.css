@@ -289,7 +289,7 @@ section {
   background-size: 135px;
 }
 .favorite__list {
-  width: 70%;
+  width: 80%;
   position: relative;
 }
 @media (min-width: 769px) {
@@ -298,7 +298,7 @@ section {
   }
 }
 .favorite__itemtitle {
-  padding: 20px;
+  padding: 20px 0;
   font-size: 24px;
 }
 @media (min-width: 769px) {
@@ -564,6 +564,11 @@ section {
   background-image: url(../img/circle_white.png);
   background-repeat: no-repeat;
   background-size: 135px;
+}
+.works__text {
+  padding: 1em;
+  max-width: 620px;
+  text-indent: 1em;
 }
 .works__wrap1 {
   width: 100%;

@@ -319,7 +319,7 @@ section {
     }
 
     &__list {
-        width: 70%;
+        width: 80%;
         position: relative;
 
         @include pc {
@@ -328,7 +328,7 @@ section {
     }
 
     &__itemtitle {
-        padding: 20px;
+        padding: 20px 0;
         font-size: 24px;
 
         @include pc {
@@ -382,7 +382,6 @@ section {
                 width: 65%;
             }
         }
-
     }
 }
 
@@ -612,6 +611,12 @@ section {
         background-image: url(../img/circle_white.png);
         background-repeat: no-repeat;
         background-size: 135px;
+    }
+
+    &__text {
+        padding: 1em;
+        max-width: 620px;
+        text-indent: 1em;
     }
 
     &__wrap1 {
