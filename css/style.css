@@ -928,6 +928,7 @@ section {
   bottom: 30px;
   right: 3%;
   display: none;
+  transition: 0.5s;
   z-index: 20;
 }
 .topbtn.active {
@@ -939,4 +940,7 @@ section {
 .topbtn__icon {
   width: 60px;
   height: 60px;
+}
+.topbtn:hover {
+  bottom: 35px;
 }/*# sourceMappingURL=style.css.map */

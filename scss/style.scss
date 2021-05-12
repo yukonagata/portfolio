@@ -996,12 +996,12 @@ section {
     bottom: 30px;
     right: 3%;
     display: none;
+    transition: .5s;
     z-index: 20;
 
     &.active {
         display: block;
     }
-
 
     &__link {
         color: #aaa;
@@ -1010,5 +1010,9 @@ section {
     &__icon {
         width: 60px;
         height: 60px;
+    }
+
+    &:hover {
+        bottom: 35px;
     }
 }
