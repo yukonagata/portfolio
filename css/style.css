@@ -191,9 +191,13 @@ section {
   font-size: 12px;
 }
 .profile__text {
+  padding-bottom: 10px;
   line-height: 1.7em;
   text-indent: 1em;
   text-align: justify;
+}
+.profile__text:last-child {
+  padding-bottom: 0;
 }
 .profile__box {
   position: relative;

@@ -219,9 +219,14 @@ section {
     }
 
     &__text {
+        padding-bottom: 10px;
         line-height: 1.7em;
         text-indent: 1em;
         text-align: justify;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
     }
     
     &__box {
