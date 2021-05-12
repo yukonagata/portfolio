@@ -784,7 +784,7 @@ section {
 }
 @media (min-width: 769px) {
   .obox__inner {
-    max-width: 49%;
+    width: calc((100% - 10px)/2);
     height: auto;
     margin-right: 0;
     margin-left: 0;

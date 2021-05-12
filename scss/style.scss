@@ -832,7 +832,7 @@ section {
             align-self: flex-start;
 
             @include pc {
-                max-width: 49%;
+                width: calc((100% - 10px)/2);
                 height: auto;
                 margin-right: 0;
                 margin-left: 0;
