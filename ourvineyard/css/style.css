@@ -50,3 +50,8 @@ h2 {
 	max-width: 1140px
 }
 
+@media (max-width: 575.98px) {
+	.menu-title {
+		font-size: 1.2rem;
+	}
+}
