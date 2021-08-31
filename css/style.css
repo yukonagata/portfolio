@@ -230,8 +230,10 @@ section {
   background-image: url(../img/yukosphoto.jpg);
   background-repeat: no-repeat;
   background-position: left top;
-  margin: 30px 3% 0 0;
-  width: 50%;
+  background-size: cover;
+  margin: 45px 3% 0 0;
+  padding-top: 10px;
+  width: 48%;
   height: auto;
   border-radius: 50% 90% 40% 40%/70%;
   box-shadow: -10px 10px 15px #d9d9d9, 15px -15px 30px #ffffff;
@@ -271,6 +273,9 @@ section {
   content: "●";
   padding-right: 0.5em;
   color: #78c2d3;
+}
+.profile dd {
+  font-size: 14px;
 }
 
 /* 好きなこと----------------------------------*/
