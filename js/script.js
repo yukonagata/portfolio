@@ -39,7 +39,7 @@ gNavi.onclick = (e) => {
 
 
 //------------------好きなことSwiper-------------------------
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper', {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',

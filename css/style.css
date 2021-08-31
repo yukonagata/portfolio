@@ -393,7 +393,7 @@ section {
   color: #ffffff;
 }
 
-.swiper-container {
+.swiper {
   margin: 0 auto;
   max-width: 620px;
   height: 400px;
