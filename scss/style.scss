@@ -423,47 +423,48 @@ section {
   }
 
   /* 現在のスライドのスタイル */
-  .swiper-pagination-bullet-active {
-      background-color: $color-wblue;
-      color: #ffffff;
-  }
+    .swiper-pagination-bullet-active {
+        background-color: $color-wblue;
+        color: #ffffff;
+    }
   
-.swiper {
-    margin: 0 auto;
-    max-width: 620px;
-    height: 400px;
-    background-image: url(../img/circle_white_big.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
+    .swiper {
+        margin: 0 auto;
+        max-width: 620px;
+        height: 400px;
+        background-image: url(../img/circle_white_big.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: relative;
+    }
 
-  .swiper-slide {
-    text-align: center;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
+    .swiper-slide {
+        text-align: center;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
 
-  .swiper-button-prev:after,
-  .swiper-button-next:after {
-      color: #888;
-      display: none;
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        color: #888;
+        display: none;
 
-      @include pc {
-          display: block;
-      }
-  }
+        @include pc {
+            display: block;
+        }
+    }
   
 /* 現在のスキル----------------------------------*/
 .skill {
