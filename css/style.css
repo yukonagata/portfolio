@@ -364,8 +364,8 @@ section {
 .swiper-pagination {
   margin: 0 auto;
   max-width: 400px;
-  left: 0;
-  right: 40%;
+  top: 0;
+  text-align: left;
 }
 @media (min-width: 769px) {
   .swiper-pagination {
@@ -382,6 +382,7 @@ section {
   opacity: 0.8;
   color: #333;
   font-size: 16px;
+  text-align: center;
 }
 .swiper-pagination-bullet:focus {
   outline: none;

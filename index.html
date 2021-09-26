@@ -17,9 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <!--AOSanimation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--MyCss-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
     <!--SwiperCss-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!--MyCss-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -94,8 +94,8 @@
         <section class="favorite__main">
             <h2 class="favorite__title" data-aos="fade-down" data-aos-duration="1500">Favorite</h2>
             <!-- Swiper -->
-            <div class="swiper-pagination"></div>
             <div class="swiper">
+                <div class="swiper-pagination"></div>
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
                         <div class="favorite__list">
@@ -133,11 +133,11 @@
                         </div><!--/.favorite__list-->
                     </li>
                 </ul>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
-    </div><!--/.favorite-->
+    </div><!--/.favorite-->   
 
     <!-- Skill -->
     <div id="skill" class="skill">
@@ -349,8 +349,7 @@
         <img src="img/topbtn__icon.png" alt="topページに戻る浮き輪アイコン" class="topbtn__icon"></a>
     </div><!--/.topbtn-->
     <!--SwiperJavaScript-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!--AOSanimation-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--MyJavaScript-->
