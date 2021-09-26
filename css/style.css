@@ -586,6 +586,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  -moz-column-count: 1;
+       column-count: 1;
 }
 @media (min-width: 769px) {
   .works__wrap1 {
@@ -594,11 +596,11 @@ section {
     background-size: 200px;
     background-position: right bottom 10px;
     display: block;
+    flex-direction: row;
     -moz-column-count: 2;
          column-count: 2;
     -moz-column-gap: 10px;
          column-gap: 10px;
-    height: 652px;
   }
 }
 .works__wrap2 {
@@ -618,19 +620,14 @@ section {
 .wbox1 {
   margin-bottom: 10px;
   padding: 0.5em;
-  max-width: 90%;
+  width: 100%;
+  max-width: 100%;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
   display: inline-block;
   background-color: #fafafa;
   border-radius: 10px;
   position: relative;
-}
-@media (min-width: 769px) {
-  .wbox1 {
-    width: 100%;
-    max-width: 100%;
-  }
 }
 .wbox1:hover .wbox1__mask {
   opacity: 1;
@@ -788,6 +785,7 @@ section {
 .obox__inner {
   margin: 10px auto 0;
   padding: 1em;
+  width: 100%;
   max-width: 500px;
   border-radius: 10px;
   background: #fafafa;

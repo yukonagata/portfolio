@@ -637,6 +637,7 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        column-count: 1;//PCでの横並び数
 
         @include pc {
             background-image: url(../img/bgworks.png);
@@ -644,9 +645,10 @@ section {
             background-size: 200px;
             background-position: right bottom 10px;    
             display: block;
+            flex-direction: row;
             column-count: 2;//PCでの横並び数
             column-gap: 10px;//アイテム間の余白
-            height: 652px;
+            // height: 652px;
             }
     }
 
@@ -665,18 +667,13 @@ section {
 .wbox1 {
     margin-bottom: 10px;
     padding: .5em;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     break-inside: avoid;//ボックス内での区切り禁止
     display: inline-block;
     background-color: $color-bg;
     border-radius: 10px;
     position: relative;
-
-    @include pc {
-        width: 100%;
-        max-width: 100%;
-    }
-
 
     &:hover &__mask{
         opacity: 1;
@@ -839,6 +836,7 @@ section {
         &__inner {
             margin: 10px auto 0;
             padding: 1em;
+            width: 100%;
             max-width: 500px;
             border-radius: 10px;
             background: $color-bg;
