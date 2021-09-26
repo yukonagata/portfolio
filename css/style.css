@@ -265,6 +265,7 @@ section {
 }
 .profile dd {
   padding-left: 2em;
+  font-size: 14px;
 }
 .profile dd + dt {
   padding-top: 0.5em;
@@ -273,9 +274,6 @@ section {
   content: "●";
   padding-right: 0.5em;
   color: #78c2d3;
-}
-.profile dd {
-  font-size: 14px;
 }
 
 /* 好きなこと----------------------------------*/
