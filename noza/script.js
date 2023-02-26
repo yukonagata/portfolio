@@ -18,7 +18,6 @@ window.onscroll = () => {
     } else {
         pageTop2.classList.remove('active');
     }
-
 };
 //------------------トップに戻るボタンここまで----------------
 
